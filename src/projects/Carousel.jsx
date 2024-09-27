@@ -1,0 +1,39 @@
+import React from 'react';
+import './../pages/Pages.css';
+import { NavLink } from "react-router-dom";
+
+const Carousel = () => {
+  return (
+    
+    <section className="projectpage">
+      {/* <NavLink to="/home" className="navbarspace">
+        <p>INÉS RODRÍGUEZ HSU</p>
+      </NavLink> */}
+      <div className="projecttitle">
+        Carousel
+      </div>
+      <video className="project-photo1" src="src/projects/carousel.mp4" alt="Carousel animation" autoPlay loop></video>
+      <div className="projectdescription">
+        Short animation inspired by a mermaid statue my family found upon moving into
+        a new house. I used porcelain faces and antiques from The Metropolitan Museum of 
+        Art to bring this carousel to life, as well as my own video and audio of flying 
+        birds.
+        <br /><br />
+      </div>
+      <div className="projectsubtitle" style={{fontSize:23, paddingBottom:10}}>
+      View images:
+      </div>
+      <div className="project-photogrid">
+        <img className="project-allphotos" src='src/projects/CarouselPhoto1.png' alt="Screenshot from Carousel Animation"></img>
+        <img className="project-allphotos" src='src/projects/CarouselPhoto2.png' alt="Screenshot from Carousel Animation"></img>
+        <img className="project-allphotos" src='src/projects/CarouselPhoto3.png' alt="Screenshot from Carousel Animation"></img>
+        <img className="project-allphotos" src='src/projects/CarouselPhoto4.png' alt="Screenshot from Carousel Animation"></img>
+      </div>
+      <div className="footer"/>   
+        
+    </section>
+    
+  );
+}
+
+export default Carousel;
