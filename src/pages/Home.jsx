@@ -10,7 +10,7 @@ import gsap from 'gsap';
 
 
 const Coral = (props) => {
-    const {scene} = useGLTF('../coral1objcleanedup.glb');
+    const {scene} = useGLTF('/media/coral1objcleanedup.glb');
     
     const ref = useRef();
     const tl = useRef();

@@ -15,7 +15,7 @@ const VRBlackHole = () => {
       <div className="projectsubtitle">
       Falling through the Universe into a Black Hole: A VR Experience
       </div>
-      <video className="project-photo1" src="src/projects/vrBlackHole.mp4" alt="Video of my Falling through the Universe into a Black Hole VR experience" autoPlay loop muted></video>
+      <video className="project-photo1" src="/media/vrBlackHole.mp4" alt="Video of my Falling through the Universe into a Black Hole VR experience" autoPlay loop muted></video>
       <div className="projectdescription">
       VR experience where the viewer falls through the early universe into a 
         black hole. The experience simulates general relativistic physics effects 

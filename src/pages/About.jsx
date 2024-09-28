@@ -40,7 +40,7 @@ const About = () => {
           employing interactive components I encourage the audience to 
           engage with and be part of my work. 
           </div>
-        <img className="portrait" src="MeInMyCoral.png" alt="Photograph of me with my Coral installation"></img>
+        <img className="portrait" src="/media/MeInMyCoral.png" alt="Photograph of me with my Coral installation"></img>
     </section>
     
   );

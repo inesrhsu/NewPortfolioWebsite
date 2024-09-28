@@ -12,7 +12,7 @@ const StarCluster = () => {
       <div className="projecttitle">
         Star Cluster Evolution
       </div>
-      <video className="project-photo1" src="src/projects/starClusterEvolution.mp4" alt="Video of a Star Cluster Evolution video" autoPlay loop muted></video>
+      <video className="project-photo1" src="/media/starClusterEvolution.mp4" alt="Video of a Star Cluster Evolution video" autoPlay loop muted></video>
       <div className="projectdescription"> 
         I developed a program to produce star cluster evolution animations as would be 
         observed and photographed by Hubble Telescope and by James Webb Space Telescope 
@@ -41,13 +41,13 @@ const StarCluster = () => {
       View more:
       </div>
       <div className="project-photogrid">
-        <img className="project-allphotos" src='src/projects/StarClusterPhoto1.png' alt="Star Cluster Evolution Snapshot"></img>
-        <img className="project-allphotos" src='src/projects/StarClusterPhoto2.png' alt="Star Cluster Evolution Snapshot"></img>
+        <img className="project-allphotos" src='/media/StarClusterPhoto1.png' alt="Star Cluster Evolution Snapshot"></img>
+        <img className="project-allphotos" src='/media/StarClusterPhoto2.png' alt="Star Cluster Evolution Snapshot"></img>
       </div>
       <div className="projectsubtitle" style={{fontSize:23, paddingBottom:10}}>
       View research poster:
       </div>
-      <img className="project-photo1" src="src/projects/starClusterPoster.png" alt="Star Cluster Evolution Research Poster"></img>
+      <img className="project-photo1" src="/media/starClusterPoster.png" alt="Star Cluster Evolution Research Poster"></img>
       <div className="footer"/>  
     </section>
     

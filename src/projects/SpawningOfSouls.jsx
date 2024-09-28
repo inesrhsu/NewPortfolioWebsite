@@ -12,7 +12,7 @@ const SpawningOfSouls = () => {
       <div className="projecttitle">
         The Spawning of the Souls
       </div>
-      <img className="project-photo1" src="src/projects/spawningOfTheSouls.png" alt="Photograph of The Spawning of the Souls project"></img>
+      <img className="project-photo1" src="/media/spawningOfTheSouls.png" alt="Photograph of The Spawning of the Souls project"></img>
       <div className="projectdescription">
         A 3D imaginary world which souls inhabit. Made using Unity and Blender.
         <br /><br />

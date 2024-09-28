@@ -12,7 +12,7 @@ const Carousel = () => {
       <div className="projecttitle">
         Carousel
       </div>
-      <video className="project-photo1" src="src/projects/carousel.mp4" alt="Carousel animation" autoPlay loop></video>
+      <video className="project-photo1" src="/media/carousel.mp4" alt="Carousel animation" autoPlay loop></video>
       <div className="projectdescription">
         Short animation inspired by a mermaid statue my family found upon moving into
         a new house. I used porcelain faces and antiques from The Metropolitan Museum of 
@@ -24,10 +24,10 @@ const Carousel = () => {
       View images:
       </div>
       <div className="project-photogrid">
-        <img className="project-allphotos" src='src/projects/CarouselPhoto1.png' alt="Screenshot from Carousel Animation"></img>
-        <img className="project-allphotos" src='src/projects/CarouselPhoto2.png' alt="Screenshot from Carousel Animation"></img>
-        <img className="project-allphotos" src='src/projects/CarouselPhoto3.png' alt="Screenshot from Carousel Animation"></img>
-        <img className="project-allphotos" src='src/projects/CarouselPhoto4.png' alt="Screenshot from Carousel Animation"></img>
+        <img className="project-allphotos" src='/media/CarouselPhoto1.png' alt="Screenshot from Carousel Animation"></img>
+        <img className="project-allphotos" src='/media/CarouselPhoto2.png' alt="Screenshot from Carousel Animation"></img>
+        <img className="project-allphotos" src='/media/CarouselPhoto3.png' alt="Screenshot from Carousel Animation"></img>
+        <img className="project-allphotos" src='/media/CarouselPhoto4.png' alt="Screenshot from Carousel Animation"></img>
       </div>
       <div className="footer"/>   
         

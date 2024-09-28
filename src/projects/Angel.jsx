@@ -12,7 +12,7 @@ const Angel = () => {
       <div className="projecttitle">
         Angel
       </div>
-      <img className="project-photo1" src="src/projects/angelIcon.png" alt="Angel print"></img>
+      <img className="project-photo1" src="/media/angelIcon.png" alt="Angel print"></img>
       <div className="projectdescription">
         Intaglio and aquatint etching print. 
         <br /><br />

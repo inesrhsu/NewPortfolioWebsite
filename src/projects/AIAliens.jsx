@@ -13,16 +13,16 @@ const AIAliens = () => {
         AI Aliens
       </div>
       <div className="project-photogrid">
-        <video className="project-allphotos" src='src/projects/blueAlienVid.mp4' alt="Animation of a blue AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='src/projects/blueBlobAlienVid.mp4' alt="Animation of a blue AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='src/projects/fluidAlienVid.mp4' alt="Animation of a fluid AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='src/projects/skyAlienVid.mp4' alt="Animation of a sky AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='src/projects/greyAlienVid.mp4' alt="Animation of a grey AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='src/projects/greenAlienVid.mp4' alt="Animation of a gree AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='src/projects/redAlienVid.mp4' alt="Animation of a red AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='src/projects/colorfulAlienVid.mp4' alt="Animation of a colorful AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='src/projects/purpleAlienVid.mp4' alt="Animation of a purple AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='src/projects/purpleAlienVid2.mp4' alt="Animation of a purple AI Alien" autoPlay loop></video>
+        <video className="project-allphotos" src='/media/blueAlienVid.mp4' alt="Animation of a blue AI Alien" autoPlay loop></video>
+        <video className="project-allphotos" src='/media/blueBlobAlienVid.mp4' alt="Animation of a blue AI Alien" autoPlay loop></video>
+        <video className="project-allphotos" src='/media/fluidAlienVid.mp4' alt="Animation of a fluid AI Alien" autoPlay loop></video>
+        <video className="project-allphotos" src='/media/skyAlienVid.mp4' alt="Animation of a sky AI Alien" autoPlay loop></video>
+        <video className="project-allphotos" src='/media/greyAlienVid.mp4' alt="Animation of a grey AI Alien" autoPlay loop></video>
+        <video className="project-allphotos" src='/media/greenAlienVid.mp4' alt="Animation of a gree AI Alien" autoPlay loop></video>
+        <video className="project-allphotos" src='/media/redAlienVid.mp4' alt="Animation of a red AI Alien" autoPlay loop></video>
+        <video className="project-allphotos" src='/media/colorfulAlienVid.mp4' alt="Animation of a colorful AI Alien" autoPlay loop></video>
+        <video className="project-allphotos" src='/media/purpleAlienVid.mp4' alt="Animation of a purple AI Alien" autoPlay loop></video>
+        <video className="project-allphotos" src='/media/purpleAlienVid2.mp4' alt="Animation of a purple AI Alien" autoPlay loop></video>
       </div>
       <div className="projectdescription">
       I use an artificial intelligence bot ('Midjourney') to obtain 

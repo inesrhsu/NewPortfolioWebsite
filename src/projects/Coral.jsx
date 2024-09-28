@@ -12,7 +12,7 @@ const Coral = () => {
       <div className="projecttitle">
         Coral
       </div>
-      <img className="project-photo1" src='src/projects/coralIcon.png' alt="Photograph of my Coral installation"></img>
+      <img className="project-photo1" src='/media/coralIcon.png' alt="Photograph of my Coral installation"></img>
       <div className="projectdescription">
         My Coral world. I sewed these culptures with fabric, 
         hand-dyed them and brought them to life with colorful crayon patterns. 
@@ -29,8 +29,8 @@ const Coral = () => {
         <br /><br />
       </div>
       <div className="project-photogrid">
-        <img className="project-allphotos" src='src/projects/coralphoto2.png' alt="Photograph of my Coral installation"></img>
-        <img className="project-allphotos" src='src/projects/meInCoral2.png' alt="Photograph of me with my Coral installation"></img>
+        <img className="project-allphotos" src='/media/coralphoto2.png' alt="Photograph of my Coral installation"></img>
+        <img className="project-allphotos" src='/media/meInCoral2.png' alt="Photograph of me with my Coral installation"></img>
       </div>
 
       <div className="projectsubtitle">
@@ -42,7 +42,7 @@ const Coral = () => {
         motion with the inflating and deflating of the coral.
         <br /><br />
       </div>
-      <video className="project-photo1" src='src/projects/coralInflatables.mp4' alt="Video of my Coral Inflatables installation" autoPlay loop muted></video>
+      <video className="project-photo1" src='/media/coralInflatables.mp4' alt="Video of my Coral Inflatables installation" autoPlay loop muted></video>
       <div>
         <br /><br />
       </div>

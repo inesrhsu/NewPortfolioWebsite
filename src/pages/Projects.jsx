@@ -23,7 +23,7 @@ export const projects = [
         An earlier iteration of my coral was 'Breathing coral' consisting 
         of coral inflatables, with which I explored the coral having a breathing
          motion with the inflating and deflating of the coral.`,
-        media: 'src/projects/coralIcon.png',
+        media: '/media/coralIcon.png',
         year: '2023-2024',
         categories:['Sculpture and Installation']
     },
@@ -38,7 +38,7 @@ export const projects = [
         techniques for real-time performance.
         Made with mentorship from Professor Rupert Croft (Carnegie Mellon 
         University) and Yihao Zhou.`,
-        media: 'src/projects/vrBlackHole.mp4',
+        media: '/media/vrBlackHole.mp4',
         year: '2023-2024',
         categories:['Physics and Space Simulation'],
     },
@@ -69,7 +69,7 @@ export const projects = [
         This work was made in collaboration with Professor Carl Rodriguez (University of North
          Carolina) and Dr Ugo Niccoló Di Carlo.`,
          
-        media: 'src/projects/starClusterEvolution.mp4',
+        media: '/media/starClusterEvolution.mp4',
         year: '2022-2023',
         categories:['Physics and Space Simulation'],
     },
@@ -96,7 +96,7 @@ export const projects = [
          Note: the Iris rover was never deployed in space. 
          This was made in collaboration with the Iris Lunar Rover team.`,
          
-        media: 'src/projects/irisVisualization.mp4',
+        media: '/media/irisVisualization.mp4',
         year: '2024',
         categories:['Physics and Space Simulation'],
     },
@@ -108,7 +108,7 @@ export const projects = [
         `Abstract animation inspired by what I imagined our souls would be and 
         act like throughout our lives. I created this animation using Adobe 
         After Effects.`,
-        media: 'src/projects/souls.mp4',
+        media: '/media/souls.mp4',
         year:'2023',
         categories:['Animation'],
     },
@@ -120,7 +120,7 @@ export const projects = [
         `Animation for Beethoven's Violin.Sonata No.5, Op. 24 Movement I. Allegro
          'Spring'.The music used was an interpretation played by Anne Sophie 
          Mutter: https://www.youtube.com/watch?v=PGFs7n6n3-8 `,
-         media: 'src/projects/spring.mp4',
+         media: '/media/spring.mp4',
          year:'2023',
          categories:['Animation'],
     },
@@ -143,7 +143,7 @@ export const projects = [
         my imagination of alien life is still based on what I observe from reality 
         on Earth. In a different approach, I try to use AI to envision what alien
         life forms could look like. Access the project here: AI Aliens. `,
-        media: 'src/projects/year2235.mp4',
+        media: '/media/year2235.mp4',
         year:'2022',
         categories:['Animation'],
     },
@@ -166,7 +166,7 @@ export const projects = [
         
         The following link can be used to access the AIALIENS website:  
         https://inesr7.wixsite.com/aialiens `,
-        media: 'src/projects/aialiens.png',
+        media: '/media/aialiens.png',
         year:'2022',
         categories: ['Animation'],
     },
@@ -179,7 +179,7 @@ export const projects = [
         At first the piece has a stationary pattern of smiling pink dumplings. 
         Click on the pattern to generate new dumplings with random face expressions 
         and colors.`,
-        media: 'src/projects/happyDumpling.mp4',
+        media: '/media/happyDumpling.mp4',
         year:'2022',
         categories: ['Computer Generated Art'],
     },
@@ -195,7 +195,7 @@ export const projects = [
         Press 3 for diamonds when the mouse is clicked and trail of small diamonds 
         when the mouse is dragged.
         Press 'SPACE TAB' to restart.`,
-        media: 'src/projects/stellarDrawingTool.mp4',
+        media: '/media/stellarDrawingTool.mp4',
         year:'2022',
         categories: ['Computer Generated Art'],
     },
@@ -207,7 +207,7 @@ export const projects = [
         `This piece generates a new pattern every time the mouse is pressed with
          variations in the figures and their angles of rotation.
          Click on the pattern to generate new patterns.`,
-         media: 'src/projects/butterflyDandelions.mp4',
+         media: '/media/butterflyDandelions.mp4',
          year:'2022',
          categories:['Computer Generated Art'],
     },
@@ -221,7 +221,7 @@ export const projects = [
         lakes in the island. I also obtained inspiration from Taiwanese 'Budaixi' 
         glove puppetry tradition. I created this project using Maya and 
         Unreal Engine 4.`,
-        media: 'src/projects/sunMoonLake.png', 
+        media: '/media/sunMoonLake.png', 
         year:'2022',
          categories:['3D environments'],
     },
@@ -231,7 +231,7 @@ export const projects = [
         title: 'The Spawning of the Souls',
         description:
         `A 3D imaginary world which souls inhabit. Made using Unity and Blender.`,
-        media: 'src/projects/spawningOfTheSouls.png', 
+        media: '/media/spawningOfTheSouls.png', 
         year:'2022',
          categories:['3D environments'],
 
@@ -245,7 +245,7 @@ export const projects = [
         character's sister has been turned into stone and the player has to go 
         pass through a maze to get to the underworld to retrieve parts of her 
         and bring her back to life.`,
-        media: 'src/projects/TheStoneNightmareVid.mp4', 
+        media: '/media/TheStoneNightmareVid.mp4', 
         year:'2022',
          categories:['3D environments'],
     },
@@ -260,7 +260,7 @@ export const projects = [
         mathematical expressions in my code to generate all the spirals and 
         shapes created in my animation. I was vaguely inspired by the Singapore 
         Supertree Grove light show.`,
-        media: 'src/projects/fountainOfLife.mp4',
+        media: '/media/fountainOfLife.mp4',
         year:'2022',
         categories:['3D environments'],
 
@@ -274,7 +274,7 @@ export const projects = [
         a new house. I used porcelain faces and antiques from The Metropolitan Museum of 
         Art to bring this carousel to life, as well as my own video and audio of flying 
         birds.`,
-        media: 'src/projects/carousel.mp4',
+        media: '/media/carousel.mp4',
         year:'2022',
         categories:['Animation'],
     },
@@ -284,7 +284,7 @@ export const projects = [
         title: 'Winter',
         description:
         `Series of B&W and color woodblock prints depicting a winter forest in Finland.`,
-        media: 'src/projects/winterIcon.png',
+        media: '/media/winterIcon.png',
         year:'2021',
         categories:['Print'],
     },
@@ -294,7 +294,7 @@ export const projects = [
         title: 'Angel',
         description:
         `Intaglio and aquatint etching print.`,
-        media: 'src/projects/angelIcon.png',
+        media: '/media/angelIcon.png',
         year: '2021',
         categories:['Print'],
     },
@@ -304,7 +304,7 @@ export const projects = [
         title: 'Sea Cave',
         description:
         `Lithograph print.`,
-        media: 'src/projects/seaCaveIcon.png',
+        media: '/media/seaCaveIcon.png',
         year: '2021',
         categories:['Print'],
     }

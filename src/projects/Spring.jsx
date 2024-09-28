@@ -12,7 +12,7 @@ const Spring = () => {
       <div className="projecttitle">
         Spring
       </div>
-      <video className="project-photo1" src="src/projects/spring.mp4" alt="Spring Animation" autoPlay loop></video>
+      <video className="project-photo1" src="/media/spring.mp4" alt="Spring Animation" autoPlay loop></video>
       <div className="projectdescription">
       Animation for Beethoven's Violin. Sonata No.5, Op. 24 Movement I. Allegro
       'Spring'. The music used was an <a href='https://www.youtube.com/watch?v=PGFs7n6n3-8'>interpretation</a> played 

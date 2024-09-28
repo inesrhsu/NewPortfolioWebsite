@@ -12,7 +12,7 @@ const SeaCave = () => {
       <div className="projecttitle">
         Sea Cave
       </div>
-      <img className="project-photo1" src="src/projects/seaCaveIcon.png" alt="Photograph of me with my Coral installation"></img>
+      <img className="project-photo1" src="/media/seaCaveIcon.png" alt="Photograph of me with my Coral installation"></img>
       <div className="projectdescription">
       Lithograph print. 
         <br /><br />
