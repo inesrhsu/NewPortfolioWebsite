@@ -13,7 +13,7 @@ const Souls = () => {
         Souls
       </div>
       <video className="project-photo1" autoPlay loop muted controls preload="auto">
-        <source src="/media/souls.mp4" type="video/mp4" />
+        <source src="https://new-portfolio-website-ten.vercel.app/media/souls.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows the Souls Animation.
       </video>
