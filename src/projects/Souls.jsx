@@ -12,7 +12,12 @@ const Souls = () => {
       <div className="projecttitle">
         Souls
       </div>
-      <video className="project-photo1" src="/media/souls.mp4" alt="Souls Animation" autoPlay loop></video>
+      <video className="project-photo1" autoPlay loop controls>
+        <source src="/media/souls.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows the Souls Animation.
+      </video>
+
       <div className="projectdescription">
         Abstract animation inspired by what I imagined our souls would be and 
         act like throughout our lives. I created this animation using Adobe <a href="https://www.adobe.com/products/aftereffects.html">
