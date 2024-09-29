@@ -12,11 +12,11 @@ const Souls = () => {
       <div className="projecttitle">
         Souls
       </div>
-      <div className="project-photo1" >
-        <source src="/media/souls.mp4" type="video/mp4" autoPlay loop controls/>
+      <video className="project-photo1" autoPlay loop muted>
+        <source src="/media/souls.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows the Souls Animation.
-      </div>
+      </video>
 
       <div className="projectdescription">
         Abstract animation inspired by what I imagined our souls would be and 
