@@ -13,7 +13,7 @@ const IrisSim = () => {
         Iris Lunar Rover Simulation
       </div>
       <video className="project-photo1" autoPlay loop muted controls preload="auto">
-        <source src="/media/IrisVisualization.mp4" type="video/mp4" />
+        <source src="https://dy4k3ny7v09me.cloudfront.net/IrisVisualization.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows the Video of Iris Lunar Rover Visualization.
       </video>
