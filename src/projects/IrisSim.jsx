@@ -12,7 +12,7 @@ const IrisSim = () => {
       <div className="projecttitle">
         Iris Lunar Rover Simulation
       </div>
-      <video className="project-photo1" src="/media/irisVisualization.mp4" alt="Video of Iris Lunar Rover Visualization"autoPlay loop muted></video>
+      <video className="project-photo1" src="/media/IrisVisualization.mp4" alt="Video of Iris Lunar Rover Visualization"autoPlay loop muted></video>
       <div className="projectdescription">
       I was part of the team of students at Carnegie Mellon University working
       to send the <a href='https://irislunarrover.space'>'Iris Lunar Rover'</a> to 

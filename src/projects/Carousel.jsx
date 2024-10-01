@@ -12,7 +12,9 @@ const Carousel = () => {
       <div className="projecttitle">
         Carousel
       </div>
-      <video className="project-photo1" src="/media/carousel.mp4" alt="Carousel animation" autoPlay loop></video>
+      <video className="project-photo1" autoPlay loop muted>
+        <source src="https://dy4k3ny7v09me.cloudfront.net/vrBlackHole.mp4" type="video/mp4" />
+      </video>
       <div className="projectdescription">
         Short animation inspired by a mermaid statue my family found upon moving into
         a new house. I used porcelain faces and antiques from The Metropolitan Museum of 

@@ -69,7 +69,7 @@ export const projects = [
         This work was made in collaboration with Professor Carl Rodriguez (University of North
          Carolina) and Dr Ugo Niccoló Di Carlo.`,
          
-        media: '/media/starClusterEvolution.mp4',
+        media: '/media/starClusterEvolutionIcon.mp4',
         year: '2022-2023',
         categories:['Physics and Space Simulation'],
     },
@@ -96,7 +96,7 @@ export const projects = [
          Note: the Iris rover was never deployed in space. 
          This was made in collaboration with the Iris Lunar Rover team.`,
          
-        media: '/media/irisVisualization.mp4',
+        media: '/media/IrisVisualizationIcon.mp4',
         year: '2024',
         categories:['Physics and Space Simulation'],
     },
@@ -108,7 +108,7 @@ export const projects = [
         `Abstract animation inspired by what I imagined our souls would be and 
         act like throughout our lives. I created this animation using Adobe 
         After Effects.`,
-        media: '/media/souls.mp4',
+        media: '/media/SoulsIcon.mp4',
         year:'2023',
         categories:['Animation'],
     },
@@ -120,7 +120,7 @@ export const projects = [
         `Animation for Beethoven's Violin.Sonata No.5, Op. 24 Movement I. Allegro
          'Spring'.The music used was an interpretation played by Anne Sophie 
          Mutter: https://www.youtube.com/watch?v=PGFs7n6n3-8 `,
-         media: '/media/spring.mp4',
+         media: '/media/SpringIcon.mp4',
          year:'2023',
          categories:['Animation'],
     },
@@ -179,7 +179,7 @@ export const projects = [
         At first the piece has a stationary pattern of smiling pink dumplings. 
         Click on the pattern to generate new dumplings with random face expressions 
         and colors.`,
-        media: '/media/happyDumpling.mp4',
+        media: '/media/happyDumplingIcon.mp4',
         year:'2022',
         categories: ['Computer Generated Art'],
     },
@@ -195,7 +195,7 @@ export const projects = [
         Press 3 for diamonds when the mouse is clicked and trail of small diamonds 
         when the mouse is dragged.
         Press 'SPACE TAB' to restart.`,
-        media: '/media/stellarDrawingTool.mp4',
+        media: '/media/stellarDrawingToolIcon.mp4',
         year:'2022',
         categories: ['Computer Generated Art'],
     },
@@ -245,7 +245,7 @@ export const projects = [
         character's sister has been turned into stone and the player has to go 
         pass through a maze to get to the underworld to retrieve parts of her 
         and bring her back to life.`,
-        media: '/media/TheStoneNightmareVid.mp4', 
+        media: '/media/StoneNightmareIcon.mp4', 
         year:'2022',
          categories:['3D environments'],
     },
@@ -260,7 +260,7 @@ export const projects = [
         mathematical expressions in my code to generate all the spirals and 
         shapes created in my animation. I was vaguely inspired by the Singapore 
         Supertree Grove light show.`,
-        media: '/media/fountainOfLife.mp4',
+        media: '/media/FountainOfLifeIcon.mp4',
         year:'2022',
         categories:['3D environments'],
 
@@ -274,7 +274,7 @@ export const projects = [
         a new house. I used porcelain faces and antiques from The Metropolitan Museum of 
         Art to bring this carousel to life, as well as my own video and audio of flying 
         birds.`,
-        media: '/media/carousel.mp4',
+        media: '/media/CarouselIcon.mp4',
         year:'2022',
         categories:['Animation'],
     },
