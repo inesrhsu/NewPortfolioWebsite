@@ -23,7 +23,7 @@ export const projects = [
         An earlier iteration of my coral was 'Breathing coral' consisting 
         of coral inflatables, with which I explored the coral having a breathing
          motion with the inflating and deflating of the coral.`,
-        media: '/media/CoralIcon.png',
+        media: '/media/coralIcon.png',
         year: '2023-2024',
         categories:['Sculpture and Installation']
     },
