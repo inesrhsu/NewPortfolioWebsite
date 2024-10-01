@@ -10,14 +10,62 @@ const AIAliens = () => {
         <p>INÉS RODRÍGUEZ HSU</p>
       </NavLink> */}
       <div className="projecttitle">
-        AI Aliens
+        AIAliens
       </div>
       <div className="project-photogrid">
-        <video className="project-allphotos" src='/media/blueAlienVid.mp4' alt="Animation of a blue AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='/media/blueBlobAlienVid.mp4' alt="Animation of a blue AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='/media/fluidAlienVid.mp4' alt="Animation of a fluid AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='/media/skyAlienVid.mp4' alt="Animation of a sky AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='/media/greyAlienVid.mp4' alt="Animation of a grey AI Alien" autoPlay loop></video>
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" poster="/media/BlueAlienPhoto.png">
+        <source src="/media/blueAlienVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows an animation of a blue AIAlien.
+      </video>
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" poster="/media/BlueBlobAlienPhoto.png">
+        <source src="/media/blueBlobAlienVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows an animation of a blue AIAlien.
+      </video>
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" poster="/media/FluidAlienPhoto.png">
+        <source src="/media/fluidAlienVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows an animation of a fluid AIAlien.
+      </video>
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" poster="/media/SkyAlienPhoto.png">
+        <source src="/media/skyAlienVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows an animation of a sky AIAlien.
+      </video>
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" poster="/media/GreyAlienPhoto.png">
+        <source src="/media/greyAlienVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows an animation of a grey AIAlien.
+      </video>
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" poster="/media/GreenAlienPhoto.png">
+        <source src="/media/greenAlienVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows an animation of a green AIAlien.
+      </video>
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" poster="/media/RedAlienPhoto.png">
+        <source src="/media/redAlienVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows an animation of a red AIAlien.
+      </video>
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" poster="/media/ColorfulAlienPhoto.png">
+        <source src="/media/colorfulAlienVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows an animation of a colorful AIAlien.
+      </video>
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" poster="/media/PurpleAlienPhoto.png">
+        <source src="/media/purpleAlienVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows an animation of a purple AIAlien.
+      </video>
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" poster="/media/PurpleAlienPhoto2.png">
+        <source src="/media/purpleAlienVid2.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows an animation of a purple AIAlien.
+      </video>
+
+        
+      
         <video className="project-allphotos" src='/media/greenAlienVid.mp4' alt="Animation of a gree AI Alien" autoPlay loop></video>
         <video className="project-allphotos" src='/media/redAlienVid.mp4' alt="Animation of a red AI Alien" autoPlay loop></video>
         <video className="project-allphotos" src='/media/colorfulAlienVid.mp4' alt="Animation of a colorful AI Alien" autoPlay loop></video>

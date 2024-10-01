@@ -38,7 +38,8 @@ export const projects = [
         techniques for real-time performance.
         Made with mentorship from Professor Rupert Croft (Carnegie Mellon 
         University) and Yihao Zhou.`,
-        media: '/media/vrBlackHole.mp4',
+        media: 'https://dy4k3ny7v09me.cloudfront.net/VRBHIcon.mp4',
+        poster:'/media/VRBHPhoto.png',
         year: '2023-2024',
         categories:['Physics and Space Simulation'],
     },
@@ -70,6 +71,7 @@ export const projects = [
          Carolina) and Dr Ugo Niccoló Di Carlo.`,
          
         media: '/media/StarClusterEvolutionIcon.mp4',
+        poster: '/media/StarClusterPhoto1.png',
         year: '2022-2023',
         categories:['Physics and Space Simulation'],
     },
@@ -97,6 +99,7 @@ export const projects = [
          This was made in collaboration with the Iris Lunar Rover team.`,
          
         media: '/media/IrisVisualizationIcon.mp4',
+        poster: '/media/IrisVisualizationPhoto.png',
         year: '2024',
         categories:['Physics and Space Simulation'],
     },
@@ -109,6 +112,7 @@ export const projects = [
         act like throughout our lives. I created this animation using Adobe 
         After Effects.`,
         media: '/media/SoulsIcon.mp4',
+        poster: '/media/SoulsPhoto2.png',
         year:'2023',
         categories:['Animation'],
     },
@@ -121,6 +125,7 @@ export const projects = [
          'Spring'.The music used was an interpretation played by Anne Sophie 
          Mutter: https://www.youtube.com/watch?v=PGFs7n6n3-8 `,
          media: '/media/SpringIcon.mp4',
+         poster: '/media/SpringPhoto.png',
          year:'2023',
          categories:['Animation'],
     },
@@ -144,6 +149,7 @@ export const projects = [
         on Earth. In a different approach, I try to use AI to envision what alien
         life forms could look like. Access the project here: AI Aliens. `,
         media: '/media/Year2235Icon.mp4',
+        poster: '/media/Year2235Photo.png',
         year:'2022',
         categories:['Animation'],
     },
@@ -180,6 +186,7 @@ export const projects = [
         Click on the pattern to generate new dumplings with random face expressions 
         and colors.`,
         media: '/media/HappyDumplingIcon.mp4',
+        poster: '/media/HappyDumplingPhoto.png',
         year:'2022',
         categories: ['Computer Generated Art'],
     },
@@ -196,6 +203,7 @@ export const projects = [
         when the mouse is dragged.
         Press 'SPACE TAB' to restart.`,
         media: '/media/StellarDrawingToolIcon.mp4',
+        poster: '/media/StellarDrawingToolPhoto1.png',
         year:'2022',
         categories: ['Computer Generated Art'],
     },
@@ -208,6 +216,7 @@ export const projects = [
          variations in the figures and their angles of rotation.
          Click on the pattern to generate new patterns.`,
          media: '/media/ButterflyDandelionsIcon.mp4',
+         poster: '/media/ButterflyDandelionsPhoto.png',
          year:'2022',
          categories:['Computer Generated Art'],
     },
@@ -238,19 +247,6 @@ export const projects = [
     },
     {
         id:14,
-        idname:'stoneNightmare',
-        title: 'The Stone Nightmare',
-        description:
-        `A Bitsy game inspired by one of my nightmares. In the game the main 
-        character's sister has been turned into stone and the player has to go 
-        pass through a maze to get to the underworld to retrieve parts of her 
-        and bring her back to life.`,
-        media: '/media/StoneNightmareIcon.mp4', 
-        year:'2022',
-         categories:['3D environments'],
-    },
-    {
-        id:15,
         idname:'fountainOfLife',
         title: 'Fountain of Life',
         description:
@@ -261,10 +257,26 @@ export const projects = [
         shapes created in my animation. I was vaguely inspired by the Singapore 
         Supertree Grove light show.`,
         media: '/media/FountainOfLifeIcon.mp4',
+        poster: '/media/FountainOfLifePhoto1.png',
         year:'2022',
         categories:['3D environments'],
 
     },
+    {
+        id:15,
+        idname:'stoneNightmare',
+        title: 'The Stone Nightmare',
+        description:
+        `A Bitsy game inspired by one of my nightmares. In the game the main 
+        character's sister has been turned into stone and the player has to go 
+        pass through a maze to get to the underworld to retrieve parts of her 
+        and bring her back to life.`,
+        media: '/media/StoneNightmareIcon.mp4', 
+        poster: '/media/StoneNightmarePhoto1.png',
+        year:'2022',
+         categories:['3D environments'],
+    },
+    
     {
         id:16,
         idname:'carousel',
@@ -275,6 +287,7 @@ export const projects = [
         Art to bring this carousel to life, as well as my own video and audio of flying 
         birds.`,
         media: '/media/CarouselIcon.mp4',
+        poster: '/media/CarouselPhoto1.png',
         year:'2022',
         categories:['Animation'],
     },

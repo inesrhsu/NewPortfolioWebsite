@@ -12,7 +12,7 @@ const Carousel = () => {
       <div className="projecttitle">
         Carousel
       </div>
-      <video className="project-photo1" autoPlay loop muted controls preload="auto">
+      <video className="project-photo1" autoPlay loop muted controls preload="auto" poster="/media/CarouselPhoto1.png">
         <source src="https://dy4k3ny7v09me.cloudfront.net/carousel.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows the Carousel Animation.
