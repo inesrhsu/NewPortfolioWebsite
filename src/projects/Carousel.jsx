@@ -12,8 +12,10 @@ const Carousel = () => {
       <div className="projecttitle">
         Carousel
       </div>
-      <video className="project-photo1" autoPlay loop muted>
-        <source src="https://dy4k3ny7v09me.cloudfront.net/vrBlackHole.mp4" type="video/mp4" />
+      <video className="project-photo1" autoPlay loop muted controls preload="auto">
+        <source src="/media/carousel.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows the Carousel Animation.
       </video>
       <div className="projectdescription">
         Short animation inspired by a mermaid statue my family found upon moving into

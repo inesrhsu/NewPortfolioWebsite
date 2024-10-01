@@ -12,7 +12,11 @@ const FountainOfLife = () => {
       <div className="projecttitle">
         Fountain of Life
       </div>
-      <video className="project-photo1" src="/media/FountainOfLifeVid.mp4" alt="Fountain of Life 3D animation" autoPlay loop muted></video>
+      <video className="project-photo1" autoPlay loop muted controls preload="auto">
+        <source src="/media/FountainOfLifeVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows the Fountain of Life 3D animation.
+      </video>
       <div className="projectdescription">
       This piece is a coded animation created using Unity. I thought about 
         the souls in life that built all of nature. I used spirals as a way in 

@@ -12,7 +12,11 @@ const StoneNightmare = () => {
       <div className="projecttitle">
         Stone Nightmare
       </div>
-      <video className="project-photo1" src="/media/TheStoneNightmareVid.mp4" alt="Video of The Stone Nightmare Bitsy game" autoPlay loop muted></video>
+      <video className="project-photo1" autoPlay loop muted controls preload="auto">
+        <source src="/media/TheStoneNightmareVid.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows the video of The Stone Nightmare Bitsy game.
+      </video>
       <div className="projectdescription">
         A Bitsy game inspired by one of my nightmares. In the game the main 
         character's sister has been turned into stone and the player has to go 

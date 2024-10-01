@@ -23,7 +23,7 @@ export const projects = [
         An earlier iteration of my coral was 'Breathing coral' consisting 
         of coral inflatables, with which I explored the coral having a breathing
          motion with the inflating and deflating of the coral.`,
-        media: '/media/coralIcon.png',
+        media: '/media/CoralIcon.png',
         year: '2023-2024',
         categories:['Sculpture and Installation']
     },
@@ -69,7 +69,7 @@ export const projects = [
         This work was made in collaboration with Professor Carl Rodriguez (University of North
          Carolina) and Dr Ugo Niccoló Di Carlo.`,
          
-        media: '/media/starClusterEvolutionIcon.mp4',
+        media: '/media/StarClusterEvolutionIcon.mp4',
         year: '2022-2023',
         categories:['Physics and Space Simulation'],
     },
@@ -143,7 +143,7 @@ export const projects = [
         my imagination of alien life is still based on what I observe from reality 
         on Earth. In a different approach, I try to use AI to envision what alien
         life forms could look like. Access the project here: AI Aliens. `,
-        media: '/media/year2235.mp4',
+        media: '/media/Year2235Icon.mp4',
         year:'2022',
         categories:['Animation'],
     },
@@ -179,7 +179,7 @@ export const projects = [
         At first the piece has a stationary pattern of smiling pink dumplings. 
         Click on the pattern to generate new dumplings with random face expressions 
         and colors.`,
-        media: '/media/happyDumplingIcon.mp4',
+        media: '/media/HappyDumplingIcon.mp4',
         year:'2022',
         categories: ['Computer Generated Art'],
     },
@@ -195,7 +195,7 @@ export const projects = [
         Press 3 for diamonds when the mouse is clicked and trail of small diamonds 
         when the mouse is dragged.
         Press 'SPACE TAB' to restart.`,
-        media: '/media/stellarDrawingToolIcon.mp4',
+        media: '/media/StellarDrawingToolIcon.mp4',
         year:'2022',
         categories: ['Computer Generated Art'],
     },
@@ -207,7 +207,7 @@ export const projects = [
         `This piece generates a new pattern every time the mouse is pressed with
          variations in the figures and their angles of rotation.
          Click on the pattern to generate new patterns.`,
-         media: '/media/butterflyDandelions.mp4',
+         media: '/media/ButterflyDandelionsIcon.mp4',
          year:'2022',
          categories:['Computer Generated Art'],
     },

@@ -12,7 +12,11 @@ const Year2235 = () => {
       <div className="projecttitle">
         Year 2235
       </div>
-      <video className="project-photo1" src="/media/year2235.mp4" alt="Year 2235 video" autoPlay loop></video>
+      <video className="project-photo1" autoPlay loop muted controls preload="auto">
+        <source src="/media/year2235.mp4" type="video/mp4" />
+        Your browser does not support the video tag. 
+        This video shows the Year 2235 video.
+      </video>
       <div className="projectdescription">
         In 'Year 2235' I envision that we are in the year 2235 and humanity has 
         acquired footage of what extraterrestrial life forms look like. I imagine 
