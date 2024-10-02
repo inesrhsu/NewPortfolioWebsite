@@ -10,7 +10,7 @@ import gsap from 'gsap';
 
 
 const Coral = (props) => {
-    const {scene} = useGLTF('/media/coral1objcleanedup.glb');
+    const {scene} = useGLTF('/models/coral1objcleanedup.glb');
     
     const ref = useRef();
     const tl = useRef();
@@ -59,7 +59,38 @@ const Home = () => {
         <div className="maintitle">
             <p>INÉS RODRÍGUEZ HSU</p>
         </div>
-        
+        <Canvas dpr={[1, 2]}  camera={{fov:45}} style={{"position":"absolute"}}>  
+
+            {/* <color attach="background" args={["white"]} /> */}
+            <color attach="background" args={["#FFC0CB"]} />
+            {/* <color attach="background" args={["rgb(180,218,225)"]} /> */}
+             <PresentationControls speed={1.5} global zoom={0.3} polar={[-0.1, Math.PI / 4]}>
+                <Stage environment={null} shadows={false} ground={false}>
+                    <ambientLight intensity={2} />
+                    <pointLight position={[10, 10, 10]} />
+                    {/* <OrbitControls enableZoom={false}/> */}
+                    
+
+                    <Suspense fallback={<Loader />}>
+                    <Float
+                    speed={1} // Animation speed, defaults to 1
+                    rotationIntensity={1} // XYZ rotation intensity, defaults to 1
+                    floatIntensity={1} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
+                    floatingRange={[0,0.001]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
+                    >
+                    
+                    <ScrollControls pages={2} damping={0.25}>
+
+                    <Coral position={[0,-1.3,1]} scale={1.6} rotation={[0,Math.PI,0]}/>
+                    </ScrollControls>
+                    </Float> 
+
+                    
+                    </Suspense>
+                </Stage>
+            </PresentationControls>
+        </Canvas>
+
     
 
     </section>
