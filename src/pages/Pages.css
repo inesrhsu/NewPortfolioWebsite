@@ -61,7 +61,7 @@
     font-weight: 800;
     font-size: 6vw;/* 78px;40px; */
     position:fixed;
-    top:20px;
+    padding-top: 20%;
     display:flex;
     justify-content: center;
     z-index: 1;
