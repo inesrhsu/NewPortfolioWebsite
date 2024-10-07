@@ -68,7 +68,7 @@ const Work = () => {
       <div className="page">
         <div className="title">
           Work
-       </div>
+        </div>
         {categories.map(category => {
         const includedProjects = projects.filter(project => project.categories.includes(category));
         return(
@@ -108,6 +108,7 @@ const Work = () => {
           </div>
         )
       })}
+      <div className="footer"/>  
     </div>
   );
 };

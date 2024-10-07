@@ -10,6 +10,7 @@ import {useGLTF, Html, Stage, PresentationControls, Float, useScroll, ScrollCont
 import gsap from 'gsap';
 import SplitType from 'split-type';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Coral = (props) => {
     const {scene} = useGLTF('/models/coral1objcleanedup.glb');  
@@ -78,7 +79,7 @@ const HTMLContentCoral = () => {
   )
 }
 
-const AnimateText = ({text}) => {
+const AnimateText = ({text,textcolor}) => {
   const textRef = useRef(null);
   const splitTextRef = useRef(null);
 
@@ -120,7 +121,7 @@ const AnimateText = ({text}) => {
         }
     };
   },[text]);
-  return <div className="overlay-text1" ref={textRef}>{text}</div>;
+  return <div className="overlay-text1" ref={textRef} style={{color:textcolor}}>{text}</div>;
 }
 
 
@@ -199,14 +200,14 @@ const Home = () => {
             <source src="https://dy4k3ny7v09me.cloudfront.net/vrBlackHole.mp4" type="video/mp4" />
           </video> 
             <NavLink to={`/work#${categories[0].replace(/\s+/g, '-')}`}>
-              <AnimateText text={`Physics and Space Simulation`} />
+              <AnimateText text={`Physics and Space Simulation`} textcolor={'var(--bg-color)'} />
             </NavLink>
         </div>
         <div className="video-container">
           {/* <div className="overlay-text2"> */}
             
               <NavLink to={`/work#${categories[1].replace(/\s+/g, '-')}`}>
-                <AnimateText text={`Animation`} />
+                <AnimateText text={`Animation`} textcolor={'var(--first-color)'}/>
               </NavLink> 
             
           {/* </div> */}
@@ -219,7 +220,7 @@ const Home = () => {
           </video>
          
         </div>
-        
+        <Footer />  
     </section>
   );
 }

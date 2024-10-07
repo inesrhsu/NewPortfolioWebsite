@@ -110,12 +110,12 @@
     left:21%;
     font-family: var(--body-font);
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--bg-color);
     text-shadow: 0px 0px 1px rgba(255, 255, 255, 1);
-     background-color: rgba(0, 0, 0, 0.20);
+     /* background-color: rgba(0, 0, 0, 0.20); */
      /* border-bottom: 1px solid white; */
     font-weight: 200;
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 4.0vw;
     text-align:left;
     width: 35%;
@@ -224,7 +224,7 @@
     }
   } 
 
- a{
+a{
     text-decoration:none;
     color:var(--second-color);
 }
