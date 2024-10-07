@@ -2,6 +2,7 @@
     height: 100%; /* Ensure full height */
     margin: 0; /*Remove default margin */
     background-color: var(--bg-color); /*Set your desired background color */
+    scroll-behavior: smooth;
     /* border:1px solid var(--first-color);  */
 }
 
@@ -43,10 +44,10 @@
  .home{
     width: 100%;
     height: 100vh;
-    position: absolute;
-    display:flex;
+    /* position: absolute; */
+    /* display:flex; */
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     color: var(--first-color);
     text-decoration: none;
     font-size:var(--name-font-size); 
@@ -54,17 +55,22 @@
     
 } 
 
-.home .maintitle {
+.maintitle {
     font-family: var(--title-font);
+    
     color: var(--first-color);
     text-align:center;
     font-weight: 800;
     font-size: 6vw;/* 78px;40px; */
-    position:fixed;
-    padding-top: 20%;
-    display:flex;
-    justify-content: center;
-    z-index: 1;
+    /* width: 800px; */
+    padding-left: 30px;
+    padding-top: 30px;
+    /* position:fixed; */
+    /* top: 20px; */
+    /* font-style:italic; */
+    
+    /* display:flex;
+    justify-content: center; */
     
 } 
  
@@ -81,6 +87,55 @@
     color: var(--first-color);
     z-index: 0; /*Ensure it's below other content */
 }
+
+.coral-page{
+    width: 100vw;
+    height:100vh;
+}
+
+.home-video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.video-container{
+    position:relative;
+    width: 100%;
+    z-index: 2;
+}
+.overlay-text1{
+    position: absolute;
+    top:15%;
+    left:21%;
+    font-family: var(--body-font);
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 1);
+     background-color: rgba(0, 0, 0, 0.20);
+     /* border-bottom: 1px solid white; */
+    font-weight: 200;
+    font-style: italic;
+    font-size: 4.0vw;
+    text-align:left;
+    width: 35%;
+}
+/* .overlay-text2{
+    position: absolute;
+    top:15%;
+    left:25%;
+    font-family: var(--body-font);
+    transform: translate(-50%, -50%);
+    /* color: var(--first-color); */
+    /* color: white;
+    text-shadow: 1px 1px 1px rgb(255,255,255,1);
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: 200;
+    font-style: italic;
+    font-size: 4.5vw;
+    text-align:left;
+    width:35%; */
+/*} */
 
 
  .page{
@@ -129,7 +184,7 @@
     color: var(--first-color);
     text-align:left;
     font-weight: 50;
-    font-size: calc(min(7vw, 30px));/* 78px;40px; */
+    font-size: calc(min(7vw, 40px));/* 78px;40px; */
    padding-top:30px;
     padding-left:135px;
     z-index: 1;  
@@ -150,12 +205,12 @@
     font-family: var(--body-font);
     color: var(--first-color);
     text-align:justify;
-    font-weight: 50;
-    font-size:  calc(min(2.5vw,15px)); /*78px;40px; */
+    font-weight: 300;
+    font-size:  calc(min(2.5vw,16px)); /*78px;40px; */
     /* text-shadow:1px 1px 7px rgba(249, 91, 212, 0.5); */
     /* border: 1px solid black; */
     width: 700px;
-    padding-top:30px;
+    padding-top:15px;
     padding-left:135px;
     padding-right: 100px;
     /* display:flex;
@@ -277,11 +332,6 @@
     
 }
 
-.card p{
-    font-size:70px;
-    font-weight:600;
-    color:#ffffff;
-}
 
  .project-media {
     width: 100%; /* Ensure the media fits within the box */
@@ -304,14 +354,16 @@
 
  .project-title{
     font-family:var(--body-font);
+    color: var(--first-color);
     font-size:large;
-    font-weight:50;
+    font-weight:300;
     text-align: left;
     padding-right:10px;
 }
 .project-desc{
     font-size:large;
     font-family:var(--body-font);
+    font-weight:300;
 } 
 
 .projectpage{
@@ -369,8 +421,8 @@
     font-family: var(--body-font);
     color: var(--first-color);
     text-align:justify;
-    font-weight: 50;
-    font-size:  calc(min(2.5vw,15px)); /*78px;40px; */
+    font-weight: var(--font-light-bold);
+    font-size:  calc(min(2.5vw,16px)); /*78px;40px; */
     /* text-shadow:1px 1px 7px rgba(249, 91, 212, 0.5); */
     /* border: 1px solid black; */
     width:calc(min(90%,700px));

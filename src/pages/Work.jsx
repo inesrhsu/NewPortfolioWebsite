@@ -1,4 +1,4 @@
-import React, {useState, useRef} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import "./Pages.css";
 import { projects, categories } from './Projects';
 import { useNavigate } from "react-router-dom";
@@ -38,6 +38,32 @@ const Work = () => {
     navigate(`/${projectIdname}`);
   };
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if(hash){
+        const section = document.getElementById(hash.substring(1));
+        // if(section){
+        //   section.scrollIntoView({behavior:'smooth', block:'start'});
+        //   // window.scrollBy(0, -80);
+        // }
+        if (section) {
+          const top = section.getBoundingClientRect().top + window.scrollY; // Get the absolute position of the section
+          window.scrollTo({ top: top - 50, behavior: 'smooth' }); // Adjust for header height
+        }
+        
+      }
+    };
+
+    handleHashChange();
+
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  },[]);
+
   return(
       <div className="page">
         <div className="title">
@@ -46,7 +72,7 @@ const Work = () => {
         {categories.map(category => {
         const includedProjects = projects.filter(project => project.categories.includes(category));
         return(
-          <div key={category}>
+          <div key={category} id={category.replace(/\s+/g, '\-')} >
             <div className='project-category'>{category}</div>
             <div className="container">
               <div className="inner-container" ref={el => (containerRefs.current[category] = el)} 

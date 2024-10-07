@@ -1,17 +1,20 @@
 :root {
   /* --header-height: 3.5rem; */
   --bg-color:rgb(255, 192, 203);
-  --first-color: rgb(0, 86, 110);/*rgb(43, 12, 98);rgb(0, 96, 118) */
+  /*--first-color: rgb(192,255,245); --first-color: rgb(203, 255, 192); */
+  --first-color: rgb(0, 86, 110); /*rgb(43, 12, 98);rgb(0, 96, 118) */
   --second-color: rgb(47, 154, 154);
   --text-color: rgb(247, 166, 152);
   --body-color: hsl(0, 0%, 6%);
-  --title-font:Fira,sans-serif;
-  --body-font: Geneva, Tahoma, Helvetica, Arial, sans-serif;
+  /* --title-font:Fira,sans-serif; */
+  --title-font: 'Playfair Display',serif;
+  --body-font: 'Lato',Fira, Geneva, Tahoma, Helvetica, Arial, sans-serif;
   /* --second-font: "Dancing Script", cursive; */
   --name-font-size: 1.75rem;
-  --small-font-size: 0.813rem;
-  --font-light-bold: 50;
-  --font-med-bold: 100;
+  --small-font-size: 0.85rem;
+  --med-font-size: 1rem;
+  --font-light-bold: 300;
+  --font-med-bold: 400;
   --font-bold:700;
   /* --font-semi-bold: 600; */
   /* --z-tooltip: 10; */

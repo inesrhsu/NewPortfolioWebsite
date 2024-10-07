@@ -4,39 +4,29 @@ import { useEffect, useState } from 'react';
 import './../index.css';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ scrollOffset }) => {
 
   const location = useLocation();
   const [showName, setShowName] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= window.innerHeight/2){
-        setShowName(true);
+      // console.log("in useEffect");
+      if (location.pathname === "/"){
+        setShowName(scrollOffset >= 0.15);
+        // console.log("scrollOffset>=0.25",scrollOffset>=0.25);
       } else {
-        setShowName(false);
+        setShowName(true);
       }
-    };
-
-    if (location.pathname === "/home") {
-      window.addEventListener("scroll", handleScroll);
-    }
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [location.pathname]); //run useEffect when location pathname changes
+      // console.log("showName", showName);
+      // console.log("location.pathname !== /", (location.pathname !== "/"));
+  }, [location.pathname, scrollOffset]); //run useEffect when location pathname changes
 
   return (
     <header>
-      { showName && (
-        <NavLink to="/home" className="icon">
-          <p>INÉS RODRÍGUEZ HSU</p>
-        </NavLink> 
-      )}
+      
         
         <nav className="navbar">
-          <NavLink to="/home" className="item">
+          <NavLink to="/" className="item">
             <p>Home</p>
           </NavLink>
           <NavLink to="/about" className="item">
@@ -45,10 +35,16 @@ const Navbar = () => {
           <NavLink to="/work" className="item">
             <p>Work</p>
           </NavLink>
-          <NavLink to="/contact" className="item">
+          {/* <NavLink to="/contact" className="item">
             <p>Contact</p>
-          </NavLink>
+          </NavLink> */}
         </nav>
+
+        { (showName || location.pathname !== "/") && (
+        <NavLink to="/" className="icon">
+          <p>INÉS RODRÍGUEZ HSU</p>
+        </NavLink> 
+      )}
     </header>
   )
 }

@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import {Home, About, Work, Contact} from './pages';
 import {Coral, VRBlackHole, StarCluster, IrisSim,Souls,Spring,Year2235,
   AIAliens,HappyDumplings,StellarDrawingTool,ButterflyDandelions,SunMoonLakeTale,
@@ -13,7 +14,7 @@ const App = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home/>} />
-                <Route path="/home" element={<Home/>} />
+                {/* <Route path="/home" element={<Home/>} /> */}
                 <Route path="/about" element={<About/>} />
                 <Route path="/work" element={<Work/>} />
                 <Route path="/contact" element={<Contact/>} />
@@ -38,6 +39,7 @@ const App = () => {
                 <Route path="/angel" element={<Angel/>} />
                 <Route path="/seaCave" element={<SeaCave/>} />
             </Routes>
+            <Footer />
         </Router>
     </main>
   )
