@@ -166,7 +166,7 @@ const Home = () => {
             {/* <p>Inés Rodríguez Hsu</p> */}
           </div>
         </Html>
-        <PresentationControls speed={1.5} global zoom={0.3} polar={[-0.1, Math.PI / 4]}>
+         <PresentationControls speed={1.5} global={true}  polar={[-0.1, Math.PI / 4]}>
           {/* <Stage environment={null} shadows={false} ground={false}> */}
             <ambientLight intensity={2} />
             <pointLight position={[10, 10, 10]} />
@@ -178,7 +178,7 @@ const Home = () => {
                   speed={1} // Animation speed, defaults to 1
                   rotationIntensity={1} // XYZ rotation intensity, defaults to 1
                   floatIntensity={1} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
-                  floatingRange={[0,0.001]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
+                  floatingRange={[0,0.0001]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
                   >
                     <Coral position={[0,-1.3,1]} scale={0.001*window.innerWidth} rotation={[0,Math.PI,0]} />
                   </Float> 

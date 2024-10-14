@@ -47,6 +47,7 @@ header .icon {
 
 header .navbar{
     /* border:1px solid blue; */
+    padding-right: 20px;
     display:flex;
     height: 3.5rem;
     align-items:center; /*vertically in center*/

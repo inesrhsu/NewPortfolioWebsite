@@ -17,7 +17,8 @@ import Carousel from './Carousel';
 import Winter from './Winter';
 import Angel from './Angel';
 import SeaCave from './SeaCave';
+import ShaderExperiments from './ShaderExperiments';
 
 export {Coral,VRBlackHole,StarCluster,IrisSim,Souls,Spring,Year2235,AIAliens,
     HappyDumplings,StellarDrawingTool,ButterflyDandelions,SunMoonLakeTale,
-    SpawningOfSouls,StoneNightmare,FountainOfLife,Carousel,Winter,Angel,SeaCave};
+    SpawningOfSouls,StoneNightmare,FountainOfLife,Carousel,Winter,Angel,SeaCave,ShaderExperiments};

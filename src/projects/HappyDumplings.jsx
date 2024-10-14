@@ -3,6 +3,7 @@ import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import {ReactP5Wrapper} from "@p5-wrapper/react";
 import HappyDumplingSketch from "./HappyDumplingp5js";
+import HappyDumplingSketch2 from "./HappyDumplingp5js2";
 
 const HappyDumplings = () => {
   return (
@@ -30,6 +31,10 @@ const HappyDumplings = () => {
       
       <div className="project-photo1"> 
         <ReactP5Wrapper sketch = {HappyDumplingSketch}/>
+        <br />
+      </div>
+      <div className="project-photo1"> 
+        <ReactP5Wrapper sketch = {HappyDumplingSketch2}/>
       </div>
       <div className="footer"/>
     </section>

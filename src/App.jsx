@@ -5,7 +5,7 @@ import {Home, About, Work, Contact} from './pages';
 import {Coral, VRBlackHole, StarCluster, IrisSim,Souls,Spring,Year2235,
   AIAliens,HappyDumplings,StellarDrawingTool,ButterflyDandelions,SunMoonLakeTale,
   SpawningOfSouls,StoneNightmare,FountainOfLife,
-  Carousel,Winter,Angel,SeaCave} from './projects';
+  Carousel,Winter,Angel,SeaCave,ShaderExperiments} from './projects';
 
 const App = () => {
   return (
@@ -38,6 +38,7 @@ const App = () => {
                 <Route path="/winter" element={<Winter/>} />
                 <Route path="/angel" element={<Angel/>} />
                 <Route path="/seaCave" element={<SeaCave/>} />
+                <Route path="/ShaderExperiments" element={<ShaderExperiments/>} />
             </Routes>
             <Footer />
         </Router>

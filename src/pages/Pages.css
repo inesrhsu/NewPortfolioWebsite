@@ -3,6 +3,7 @@
     margin: 0; /*Remove default margin */
     background-color: var(--bg-color); /*Set your desired background color */
     scroll-behavior: smooth;
+    /* border-top: 1px solid var(--first-color); */
     /* border:1px solid var(--first-color);  */
 }
 
@@ -478,6 +479,23 @@ a{
     /* border:1px solid blue; */
     
   }
+
+  .shader-experiment{
+    width:calc(min(min(90%,700px),90vh));
+    height:calc(min(min(90vw,700px),90vh));
+    /* border: 2px solid var(--second-color); */
+  }
+  .canvas-container {
+    width:100%;
+    height: 100%; /* Ensure the canvas takes the full height */
+    overflow: hidden; /* Prevent any overflow */
+  }
+  
+  .canvas {
+    width: 100%;
+    height: 100%;
+  }
+  
 
    /* For width 400px and larger: */
    @media only screen and (min-width: 400px) {

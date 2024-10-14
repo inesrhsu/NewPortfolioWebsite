@@ -320,6 +320,17 @@ export const projects = [
         media: '/media/seaCaveIcon.png',
         year: '2021',
         categories:['Print'],
+    },
+    {
+        id:20,
+        idname:'shaderExperiments',
+        title: 'Shader Experiments',
+        description:
+        `Shader experiments.`,
+        media: '/media/BlueWavesWhiteSphere.mp4',
+        poster: '/media/BlueWavesWhiteSpherePhoto.png',
+        year: '2021',
+        categories:['Computer Generated Art'],
     }
 ];
 

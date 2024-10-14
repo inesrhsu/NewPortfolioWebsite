@@ -19,7 +19,7 @@ const IrisSim = () => {
       </video>
       <div className="projectdescription">
       I was part of the team of students at Carnegie Mellon University working
-      to send the <a href='https://irislunarrover.space'>'Iris Lunar Rover'</a> to 
+      to send the <a href='https://irislunarrover.space'>Iris Lunar Rover</a> to 
       the Moon. This is a simulation I made for the Iris lunar rover team during 
       mission when the rover was aboard <a href='https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=PEREGRN-1'>Peregrine Mission One</a>, 
       a mission aiming to land on the Moon in January 2024. Astrobotic's Peregrine 
