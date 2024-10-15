@@ -25,7 +25,7 @@ const Work = () => {
   const handleMouseLeave = () => {
     setMouseDown(false);
   };
-
+//scroll by dragging
   const handleMouseMove = (e, category) => {
 
     if(!mouseDown) return;
@@ -33,6 +33,15 @@ const Work = () => {
     const scrollAmount = (e.clientX - startX)*0.5;
     containerRefs.current[category].scrollLeft = scrollX - scrollAmount;
   };
+
+//change to using arrows
+// const [scrollPosition, setScrollPosition] = useState(0);
+  
+  // const handleScroll = (scrollAmount) => {
+  //   const newScrollPosition = scrollPosition + scrollAmount;
+  //   setScrollPosition(newScrollPosition);
+  //   containerRef.current.scrollLeft = newScrollPosition;
+  // }
 
   const handleCardClick = (projectIdname) => {
     navigate(`/${projectIdname}`);
@@ -117,13 +126,7 @@ export default Work;
 
 
 
-// const [scrollPosition, setScrollPosition] = useState(0);
-  
-  // const handleScroll = (scrollAmount) => {
-  //   const newScrollPosition = scrollPosition + scrollAmount;
-  //   setScrollPosition(newScrollPosition);
-  //   containerRef.current.scrollLeft = newScrollPosition;
-  // }
+
 
 
 
