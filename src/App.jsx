@@ -39,6 +39,7 @@ const App = () => {
                 <Route path="/angel" element={<Angel/>} />
                 <Route path="/seaCave" element={<SeaCave/>} />
                 <Route path="/ShaderExperiments" element={<ShaderExperiments/>} />
+                <Route path="*" element={<Home/>} />
             </Routes>
             <Footer />
         </Router>
