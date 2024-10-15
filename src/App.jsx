@@ -1,4 +1,4 @@
-import { BrowserRouter as Route,Router, Routes} from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import {Home, About, Work, Contact} from './pages';
@@ -39,7 +39,6 @@ const App = () => {
                 <Route path="/angel" element={<Angel/>} />
                 <Route path="/seaCave" element={<SeaCave/>} />
                 <Route path="/ShaderExperiments" element={<ShaderExperiments/>} />
-                <Route path="*" element={<Home/>} />
             </Routes>
             <Footer />
         </Router>
