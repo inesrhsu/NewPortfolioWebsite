@@ -56,29 +56,6 @@ const ScrollOffsetUpdater = ({ setScrollOffset }) => {
     return null; // This component doesn't render anything
 };
 
-const HTMLContentCoral = () => {
-  const [height, setHeight] = useState(window.innerHeight);
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setHeight(window.innerHeight);
-      setWidth(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  return (
-    <group position = {[0,`${height/2}px`, 1]}>
-      
-      
-    </group>
-  )
-}
-
 const AnimateText = ({text,textcolor}) => {
   const textRef = useRef(null);
   const splitTextRef = useRef(null);
@@ -87,25 +64,14 @@ const AnimateText = ({text,textcolor}) => {
     const observer= new IntersectionObserver((sections) => { //sections are the sections that have to be visible to trigger animation
       sections.forEach(section =>{
         if (section.isIntersecting) {
-          console.log('Text is in view, triggering animation.');
           if(splitTextRef.current){
-            console.log('reverting current');
             splitTextRef.current.revert();
           }
-          // if (!splitTextRef.current){
-            console.log('creating new animation');
             splitTextRef.current = new SplitType(textRef.current,{types: 'words, chars', tagName: 'span'});
-            // gsap.fromTo(splitText.chars, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1 });
             gsap.from(splitTextRef.current.chars, { opacity: 0, y: 20, stagger: 0.05, clearProps: 'all'});
-            // observer.unobserve(section.target);
-          // }
         }   
       });
     }, {threshold:0.1});
-
-    // const observer = new IntersectionObserver(handleScroll, {
-    //   threshold: 0.1 // Trigger when 10% of the element is visible 
-    // });
 
     if (textRef.current) {
       observer.observe(textRef.current);
@@ -127,6 +93,8 @@ const AnimateText = ({text,textcolor}) => {
 
 const Home = () => {
   const [scrollOffset, setScrollOffset] = useState(0);
+  const [scale, setScale] = useState(0.001 * window.innerWidth);
+  const [positionY, setPositionY] = useState(-0.001*window.innerHeight);
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
 
@@ -152,6 +120,28 @@ const Home = () => {
     } 
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600){
+        setScale(0.0016*window.innerWidth);
+      }
+      else if(window.innerWidth < 1000){
+        setScale(0.0013*window.innerWidth);
+      } else {
+        setScale(0.001 * window.innerWidth);
+      }
+      setPositionY(-0.001*window.innerHeight);
+      
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return() => {
+      window.removeEventListener('resize', handleResize);
+    };
+  },[]);
+
 
   return (
     <section className="home">
@@ -166,7 +156,7 @@ const Home = () => {
             {/* <p>Inés Rodríguez Hsu</p> */}
           </div>
         </Html>
-         <PresentationControls speed={1.5} global={true}  polar={[-0.1, Math.PI / 4]}>
+         <PresentationControls speed={1.5} global={false}  polar={[-0.1, 3*Math.PI / 8]}>
           {/* <Stage environment={null} shadows={false} ground={false}> */}
             <ambientLight intensity={2} />
             <pointLight position={[10, 10, 10]} />
@@ -178,9 +168,9 @@ const Home = () => {
                   speed={1} // Animation speed, defaults to 1
                   rotationIntensity={1} // XYZ rotation intensity, defaults to 1
                   floatIntensity={1} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
-                  floatingRange={[0,0.0001]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
+                  floatingRange={[0,0]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
                   >
-                    <Coral position={[0,-1.3,1]} scale={0.001*window.innerWidth} rotation={[0,Math.PI,0]} />
+                    <Coral position={[0,positionY,1]} scale={scale} rotation={[0,Math.PI,0]} />
                   </Float> 
               </Suspense>
             </ScrollControls>

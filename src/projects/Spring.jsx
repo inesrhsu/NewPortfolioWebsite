@@ -12,7 +12,7 @@ const Spring = () => {
       <div className="projecttitle">
         Spring
       </div>
-      <video className="project-photo1" autoPlay loop muted controls preload="auto" poster="/media/SpringPhoto.png">
+      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/SpringPhoto.png">
         <source src="https://dy4k3ny7v09me.cloudfront.net/spring.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows the Spring Animation.

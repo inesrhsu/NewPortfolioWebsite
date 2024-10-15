@@ -62,10 +62,10 @@
     color: var(--first-color);
     text-align:center;
     font-weight: 800;
-    font-size: 6vw;/* 78px;40px; */
-    /* width: 800px; */
+    font-size: calc(max(6vw, 62px));/* 78px;40px; */
+    max-width: 90vw;
     padding-left: 30px;
-    padding-top: 30px;
+    margin-top: 10vh;
     /* position:fixed; */
     /* top: 20px; */
     /* font-style:italic; */
@@ -296,6 +296,7 @@ a{
     overflow-x:scroll; 
     scroll-behavior:smooth;
     transition: scroll-left 0.2s ease;
+    
 }
 @media only screen and (max-width: 800px) {
     .inner-container{
@@ -303,11 +304,66 @@ a{
     }  
 } 
 
-/* For WebKit browsers (Chrome, Safari) */
+/* For WebKit browsers (Chrome, Safari)
 .inner-container::-webkit-scrollbar { 
     /* width: 10px; Width of the scrollbar */
-     display:none;
-} 
+     /* display:none; */
+     /* width: 3 px;
+     height: 5px; */
+/*}  */
+
+/* .inner-container:hover {
+    scrollbar-color: #888 var(--first-color);
+} */
+
+/* .inner-container::-webkit-scrollbar-thumb {
+    background-color: var(--first-color);
+    border-radius: 6px;
+} */
+
+/* .inner-container { */
+    /* overflow: auto; Enable scrolling */
+    /* height: 300px; Set height for the scrollable area */
+    /* Optional: add a background color or padding */
+    /* background-color: #fff; 
+    padding: 10px;
+} */
+
+/* WebKit Browsers */
+.inner-container::-webkit-scrollbar {
+    padding-top:5px;
+    width: 30px; /* Scrollbar width */
+    height: 12px;
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+
+.inner-container::-webkit-scrollbar-thumb {
+    background-color: var(--first-color); /* Scrollbar color */
+    border: 1px solid var(--first-color);
+    border-radius: 10px; /* Rounded corners */
+}
+
+.inner-container::-webkit-scrollbar-track {
+    background: var(--bg-color); /* Track color */
+}
+
+/* Show scrollbar on hover */
+.inner-container:hover::-webkit-scrollbar {
+    opacity: 0.2; /* Show scrollbar on hover */
+}
+
+/* Firefox */
+.inner-container {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: transparent transparent; /* Thumb and track colors */
+}
+
+/* Show scrollbar on hover in Firefox */
+.inner-container:hover {
+    scrollbar-color: #888 #f1f1f1; /* Show colors on hover */
+}
+
 
 .content-box{
     width:2000px;

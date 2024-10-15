@@ -12,7 +12,7 @@ const Year2235 = () => {
       <div className="projecttitle">
         Year 2235
       </div>
-      <video className="project-photo1" autoPlay loop muted controls preload="auto" poster="/media/Year2235Photo.png">
+      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/Year2235Photo.png">
         <source src="https://dy4k3ny7v09me.cloudfront.net/year2235.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows the Year 2235 video.

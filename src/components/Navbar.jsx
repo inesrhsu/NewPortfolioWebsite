@@ -23,8 +23,17 @@ const Navbar = ({ scrollOffset }) => {
 
   return (
     <header>
-      
-        
+
+        { (showName || location.pathname !== "/") ? (
+        <NavLink to="/" className="icon">
+          <p>INÉS RODRÍGUEZ HSU</p>
+        </NavLink> 
+       ) : (
+        <NavLink to="/" className="icon">
+          <p> </p>
+        </NavLink> 
+      )}
+
         <nav className="navbar">
           <NavLink to="/" className="item">
             <p>Home</p>
@@ -39,12 +48,6 @@ const Navbar = ({ scrollOffset }) => {
             <p>Contact</p>
           </NavLink> */}
         </nav>
-
-        { (showName || location.pathname !== "/") && (
-        <NavLink to="/" className="icon">
-          <p>INÉS RODRÍGUEZ HSU</p>
-        </NavLink> 
-      )}
     </header>
   )
 }

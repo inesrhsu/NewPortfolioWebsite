@@ -42,7 +42,7 @@ const Coral = () => {
         motion with the inflating and deflating of the coral.
         <br /><br />
       </div>
-      <video className="project-photo1" autoPlay loop muted controls preload="auto" poster="/media/CoralInflatablesPhoto.png">
+      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/CoralInflatablesPhoto.png">
         <source src="https://dy4k3ny7v09me.cloudfront.net/coralInflatables.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows the Coral Inflatables installation.

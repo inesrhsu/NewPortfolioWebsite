@@ -5,14 +5,14 @@ import { NavLink } from "react-router-dom"
 const About = () => {
   return (
     
-    <section className="page">
+    <section className="projectpage">
       {/* <NavLink to="/home" className="navbarspace">
         <p>INÉS RODRÍGUEZ HSU</p>
       </NavLink> */}
-        <div className="title">
+        <div className="projecttitle">
           About Me
         </div>
-        <div className="description">
+        <div className="projectdescription">
           I am a multidisciplinary artist working at the intersection of art, 
           physics and computation, whose work spans installation, sculpture, 
           physics simulation, video and animation, computational art and 3D/VR 
@@ -28,10 +28,10 @@ const About = () => {
           initiatives and artistic experiences.
           <br /><br />
           </div>
-          <div className="subtitle">
+          <div className="projectsubtitle">
             About my work
           </div>
-          <div className="description">
+          <div className="projectdescription">
           I think about the large bodies in our universe like the 
           ocean and outer space and the ecosystems that could live in them. I 
           seek to bring the far away black holes, galaxies and mysteries of the 
@@ -39,8 +39,10 @@ const About = () => {
           color, patterns and motion to create playful environments. By 
           employing interactive components I encourage the audience to 
           engage with and be part of my work. 
+          <br /><br />
           </div>
-        <img className="portrait" src="/media/MeInMyCoral.png" alt="Photograph of me with my Coral installation"></img>
+        <img className="project-photo1" src="/media/MeInMyCoral.png" alt="Photograph of me with my Coral installation"></img>
+        <div className="footer"/>    
     </section>
     
   );

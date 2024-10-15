@@ -97,7 +97,7 @@ const Work = () => {
                       onClick = {() => handleCardClick(project.idname)}
                     >
                       {project.media.endsWith('.mp4') ? (
-                      <video className="project-media" autoPlay loop muted preload="auto" poster={project.poster}>
+                      <video className="project-media" autoPlay loop muted preload="auto" playsinline webkit-playsinline poster={project.poster}>
                         <source src={project.media} type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
