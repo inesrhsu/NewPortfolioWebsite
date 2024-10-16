@@ -12,7 +12,7 @@ const StoneNightmare = () => {
       <div className="projecttitle">
         Stone Nightmare
       </div>
-      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/StoneNightmarePhoto1.png">
+      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/StoneNightmarePhoto1.png">
         <source src="https://dy4k3ny7v09me.cloudfront.net/TheStoneNightmareVid.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows the video of The Stone Nightmare Bitsy game.

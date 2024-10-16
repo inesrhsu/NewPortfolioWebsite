@@ -129,23 +129,6 @@
     text-align:left;
     width: 35%;
 }
-/* .overlay-text2{
-    position: absolute;
-    top:15%;
-    left:25%;
-    font-family: var(--body-font);
-    transform: translate(-50%, -50%);
-    /* color: var(--first-color); */
-    /* color: white;
-    text-shadow: 1px 1px 1px rgb(255,255,255,1);
-    background-color: rgba(0, 0, 0, 0.1);
-    font-weight: 200;
-    font-style: italic;
-    font-size: 4.5vw;
-    text-align:left;
-    width:35%; */
-/*} */
-
 
  .page{
     display:flex;
@@ -167,75 +150,54 @@
     
 } 
 
- .title {
+.abouttitle {
     font-family: var(--title-font);
     color: var(--first-color);
-    text-align:center;
+    text-align:left;
     font-weight: 50;
     font-size: calc(min(7vw, 60px));/* 78px;40px; */
     padding-top:100px;
-    padding-left:135px;
+    /* padding-left:135px; */
     padding-bottom:20px;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     z-index: 1; 
+    /* border: 1px solid blue; */
+    width:calc(min(90%,700px));
 } 
 @media only screen and (max-width: 800px) {
-    .title{
-        padding-left:5%;
-        padding-right:5%;
-        font-size: 40px;
+    .abouttitle{
+        padding-left:15px;
+        padding-right:15px;
+        font-size: 45px;
         padding-top:80px;
-        padding-bottom:0px;
+        padding-bottom:10px;
         /* border: 1px solid blue; */
     }  
 }
-
  
 .subtitle {
     font-family: var(--title-font);
     color: var(--first-color);
     text-align:left;
     font-weight: 50;
-    font-size: calc(min(7vw, 40px));/* 78px;40px; */
-   padding-top:30px;
-    padding-left:135px;
+    font-size: calc(min(7vw, 32px));/* 78px;40px; */
+    padding-top:30px;
+    padding-bottom: 10px;
+    /* padding-left:135px; */
     z-index: 1;  
     /* height:20px;  */
     display:flex;
     align-items:flex-end;
+    width:calc(min(90%,700px));
 
     /* border:1px solid black; */
 }
 @media only screen and (max-width: 800px) {
     .subtitle { 
-        width: 90%;
-        padding-left:5%;
+        padding-left:15;
     }
   } 
-/* 
- .description{
-    font-family: var(--body-font);
-    color: var(--first-color);
-    text-align:justify;
-    font-weight: 300;
-    font-size:  calc(min(2.5vw,16px)); /*78px;40px; */
-    /* text-shadow:1px 1px 7px rgba(249, 91, 212, 0.5); */
-    /* border: 1px solid black; */
-    /* width: 700px;
-    padding-top:15px;
-    padding-left:135px;
-    padding-right: 100px; */
-    /* display:flex;
-    justify-content: center; */
-    /* z-index: 1;
-} */
-/* @media only screen and (max-width: 800px) {
-    .description { 
-        width: 90%;
-        padding-left:5%;
-    } */
-  /* }  */ 
 
 a{
     text-decoration:none;
@@ -249,19 +211,31 @@ a{
     border-top:1px solid var(--first-color);
 } 
 
-/* .page .portrait {
-    padding-top:50px;
+.worktitle {
+    font-family: var(--title-font);
+    color: var(--first-color);
+    text-align:center;
+    font-weight: 50;
+    font-size: calc(min(7vw, 60px));/* 78px;40px; */
+    padding-top:100px;
     padding-left:135px;
-    padding-bottom: 100px;
-    width: 700px;
+    padding-bottom:20px;
+    display:flex;
+    justify-content: flex-start;
+    z-index: 1; 
+    /* border: 1px solid blue; */
 } 
 @media only screen and (max-width: 800px) {
-    .page .portrait { 
-        width: 90%;
-        padding-left:5%;
-    }
-  }  */
- 
+    .worktitle{
+        padding-left:15px;
+        padding-right:15px;
+        font-size: 45px;
+        padding-top:80px;
+        padding-bottom:0px;
+        /* border: 1px solid blue; */
+    }  
+}
+
   .project-category {
     font-family: var(--title-font);
     color: var(--first-color);
@@ -315,31 +289,6 @@ a{
         width:calc(100vw - 40px);
     }  
 } 
-
-/* For WebKit browsers (Chrome, Safari)
-.inner-container::-webkit-scrollbar { 
-    /* width: 10px; Width of the scrollbar */
-     /* display:none; */
-     /* width: 3 px;
-     height: 5px; */
-/*}  */
-
-/* .inner-container:hover {
-    scrollbar-color: #888 var(--first-color);
-} */
-
-/* .inner-container::-webkit-scrollbar-thumb {
-    background-color: var(--first-color);
-    border-radius: 6px;
-} */
-
-/* .inner-container { */
-    /* overflow: auto; Enable scrolling */
-    /* height: 300px; Set height for the scrollable area */
-    /* Optional: add a background color or padding */
-    /* background-color: #fff; 
-    padding: 10px;
-} */
 
 /* WebKit Browsers */
 .inner-container::-webkit-scrollbar {
@@ -466,15 +415,12 @@ a{
     }  
 }
 
-.content{
-    flex:1;
-}
 .projecttitle{
     font-family: var(--title-font);
     color: var(--first-color);
     text-align:left;
     font-weight: 50;
-    font-size: calc(min(7vw, 30px));/* 78px;40px; */
+    font-size: calc(min(7vw, 40px));/* 78px;40px; */
     padding-top:100px;
      /* padding-left:135px; */
     padding-bottom:20px;
@@ -497,8 +443,9 @@ a{
     color: var(--first-color);
     text-align:left;
     font-weight: 50;
-    font-size: calc(min(7vw, 30px));/* 78px;40px; */
+    font-size: calc(min(6vw, 25px));/* 78px;40px; */
    padding-top:30px;
+   padding-bottom: 10px;
     z-index: 1;  
     /* height:20px;  */
     width:calc(min(90%,700px));

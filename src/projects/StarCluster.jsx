@@ -12,7 +12,7 @@ const StarCluster = () => {
       <div className="projecttitle">
         Star Cluster Evolution
       </div>
-      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/StarClusterPhoto1.png">
+      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/StarClusterPhoto1.png">
         <source src="https://dy4k3ny7v09me.cloudfront.net/starClusterEvolution.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows a Star Cluster Evolution video.
@@ -51,7 +51,7 @@ const StarCluster = () => {
       <div className="projectsubtitle" style={{fontSize:23, paddingBottom:10}}>
       View research poster:
       </div>
-      <img className="project-photo1" src="/media/starClusterPoster.png" alt="Star Cluster Evolution Research Poster"></img>
+      <img className="project-photo1" src="/media/StarClusterPoster.png" alt="Star Cluster Evolution Research Poster"></img>
       <div className="footer"/>  
     </section>
     

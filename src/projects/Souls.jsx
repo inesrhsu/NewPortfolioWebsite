@@ -12,7 +12,7 @@ const Souls = () => {
       <div className="projecttitle">
         Souls
       </div>
-      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/SoulsPhoto2.png">
+      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/SoulsPhoto2.png">
         <source src="https://dy4k3ny7v09me.cloudfront.net/souls.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows the Souls Animation.

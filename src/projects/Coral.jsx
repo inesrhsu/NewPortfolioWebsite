@@ -14,7 +14,7 @@ const Coral = () => {
       </div>
       <img className="project-photo1" src='/media/coralIcon.png' alt="Photograph of my Coral installation"></img>
       <div className="projectdescription">
-        My Coral world. I sewed these culptures with fabric, 
+        Coral world. I sewed these culptures with fabric, 
         hand-dyed them and brought them to life with colorful crayon patterns. 
         I sewed smalled coral from fun patterned fabric. My coral are stuffed 
         soft stuffing, and are not fixed to any position. Viewers are encouraged
@@ -42,7 +42,7 @@ const Coral = () => {
         motion with the inflating and deflating of the coral.
         <br /><br />
       </div>
-      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/CoralInflatablesPhoto.png">
+      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/CoralInflatablesPhoto.png">
         <source src="https://dy4k3ny7v09me.cloudfront.net/coralInflatables.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows the Coral Inflatables installation.

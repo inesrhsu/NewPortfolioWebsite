@@ -93,7 +93,7 @@ const Work = () => {
 
   return(
       <div className="page">
-        <div className="title">
+        <div className="worktitle">
           Work
         </div>
         {categories.map(category => {

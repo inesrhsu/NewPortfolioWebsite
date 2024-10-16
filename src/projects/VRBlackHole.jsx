@@ -12,7 +12,7 @@ const VRBlackHole = () => {
       <div className="projecttitle">
       Falling through the Universe into a Black Hole: A VR Experience
       </div>
-      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/VRBHPhoto.png">
+      <video className="project-photo1" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/VRBHPhoto.png">
         <source src="https://dy4k3ny7v09me.cloudfront.net/vrBlackHole.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows my Falling through the Universe into a Black Hole VR experience.

@@ -13,52 +13,52 @@ const AIAliens = () => {
         AIAliens
       </div>
       <div className="project-photogrid">
-      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/BlueAlienPhoto.png">
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/BlueAlienPhoto.png">
         <source src="/media/blueAlienVid.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows an animation of a blue AIAlien.
       </video>
-      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/BlueBlobAlienPhoto.png">
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/BlueBlobAlienPhoto.png">
         <source src="/media/blueBlobAlienVid.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows an animation of a blue AIAlien.
       </video>
-      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/FluidAlienPhoto.png">
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/FluidAlienPhoto.png">
         <source src="/media/fluidAlienVid.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows an animation of a fluid AIAlien.
       </video>
-      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/SkyAlienPhoto.png">
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/SkyAlienPhoto.png">
         <source src="/media/skyAlienVid.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows an animation of a sky AIAlien.
       </video>
-      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/GreyAlienPhoto.png">
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/GreyAlienPhoto.png">
         <source src="/media/greyAlienVid.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows an animation of a grey AIAlien.
       </video>
-      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/GreenAlienPhoto.png">
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/GreenAlienPhoto.png">
         <source src="/media/greenAlienVid.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows an animation of a green AIAlien.
       </video>
-      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/RedAlienPhoto.png">
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/RedAlienPhoto.png">
         <source src="/media/redAlienVid.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows an animation of a red AIAlien.
       </video>
-      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/ColorfulAlienPhoto.png">
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/ColorfulAlienPhoto.png">
         <source src="/media/colorfulAlienVid.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows an animation of a colorful AIAlien.
       </video>
-      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/PurpleAlienPhoto.png">
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/PurpleAlienPhoto.png">
         <source src="/media/purpleAlienVid.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows an animation of a purple AIAlien.
       </video>
-      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/PurpleAlienPhoto2.png">
+      <video className="project-allphotos" autoPlay loop muted controls preload="auto" playsInline webkit-playsinline="true" poster="/media/PurpleAlienPhoto2.png">
         <source src="/media/purpleAlienVid2.mp4" type="video/mp4" />
         Your browser does not support the video tag. 
         This video shows an animation of a purple AIAlien.

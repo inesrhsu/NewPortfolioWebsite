@@ -10,7 +10,7 @@ const About = () => {
       {/* <NavLink to="/home" className="navbarspace">
         <p>INÉS RODRÍGUEZ HSU</p>
       </NavLink> */}
-        <div className="projecttitle">
+        <div className="abouttitle">
           About Me
         </div>
         <div className="projectdescription">
@@ -29,8 +29,8 @@ const About = () => {
           initiatives and artistic experiences.
           <br /><br />
           </div>
-          <div className="projectsubtitle">
-            About my work
+          <div className="subtitle">
+            Artist's statement
           </div>
           <div className="projectdescription">
           I think about the large bodies in our universe like the 
