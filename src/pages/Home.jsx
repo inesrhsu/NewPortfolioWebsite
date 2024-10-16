@@ -45,12 +45,10 @@ const Coral = (props) => {
 }
 
 const ScrollOffsetUpdater = ({ setScrollOffset }) => {
-    // console.log("in scrollOffset")
     const scroll = useScroll();
 
     useFrame(() => {    
         setScrollOffset(scroll.offset); 
-        // console.log(scroll.offset);
     });
 
     return null; // This component doesn't render anything
@@ -124,6 +122,7 @@ const Home = () => {
     const handleResize = () => {
       if (window.innerWidth < 600){
         setScale(0.0016*window.innerWidth);
+        setPositionY(-0.5);
       }
       else if(window.innerWidth < 1000){
         setScale(0.0013*window.innerWidth);

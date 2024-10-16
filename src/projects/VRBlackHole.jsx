@@ -9,10 +9,7 @@ const VRBlackHole = () => {
       {/* <NavLink to="/home" className="navbarspace">
         <p>INÉS RODRÍGUEZ HSU</p>
       </NavLink> */}
-      <div>
-        <br /><br /><br />
-      </div>
-      <div className="projectsubtitle">
+      <div className="projecttitle">
       Falling through the Universe into a Black Hole: A VR Experience
       </div>
       <video className="project-photo1" autoPlay loop muted controls preload="auto" playsinline webkit-playsinline poster="/media/VRBHPhoto.png">
@@ -31,7 +28,8 @@ const VRBlackHole = () => {
         University) and Yihao Zhou.
         <br /><br />
       </div>
-      <div className="footer"/>   
+      
+      <div className="footer"/> 
     </section>
     
   );

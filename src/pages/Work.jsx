@@ -73,6 +73,24 @@ const Work = () => {
     };
   },[]);
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(()=>{
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener('resize',handleResize);
+    return() => window.removeEventListener('resize', handleResize);
+  },[]);
+
+  const contentBoxStyle = (nProjects) => { //take in number of projects
+    if (windowWidth <= 600){
+      return {width: nProjects* 0.8*windowWidth};
+    }
+    else{
+      return{width: nProjects*500};
+    }
+  }
+
   return(
       <div className="page">
         <div className="title">
@@ -91,13 +109,13 @@ const Work = () => {
               onMouseMove={(e)=>handleMouseMove(e,category)}
               style={{ cursor: (mouseDown) ? 'grabbing' : 'default' }}
               >
-                <div className="content-box">
+                <div className="content-box" style={contentBoxStyle(includedProjects.length)}>
                   {includedProjects.map(project => (
                     <div key={project.id} className="card"
                       onClick = {() => handleCardClick(project.idname)}
                     >
                       {project.media.endsWith('.mp4') ? (
-                      <video className="project-media" autoPlay loop muted preload="auto" playsinline webkit-playsinline poster={project.poster}>
+                      <video className="project-media" autoPlay loop muted preload="auto" playsInline webkit-playsinline="true" poster={project.poster}>
                         <source src={project.media} type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
