@@ -249,10 +249,10 @@ a{
     text-align:left;
     font-weight: 50;
     font-size: calc(min(7vw, 30px));/* 78px;40px; */
-    padding-top:30px;
+    padding-top:5px;
     padding-left:135px;
     z-index: 1;  
-    height:20px; 
+    height:auto; 
     display:flex;
     align-items:flex-end;
 }
