@@ -83,6 +83,12 @@ header .navbar .item{
     /* margin-left: 2vw;
     margin-right: 2vw; */
 }
+@media (max-width:498px){
+    header .navbar .item{
+        margin-left: 21px;
+        margin-right: 21px;
+    }   
+}
 
 header .navbar .item:link{
     color: var(--first-color);

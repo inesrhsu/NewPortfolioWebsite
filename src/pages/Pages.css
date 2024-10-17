@@ -73,15 +73,17 @@
     /* display:flex;
     justify-content: center; */ 
 } 
-@media (max-width:498px){
+@media only screen and (max-width:498px){
     .maintitle{
         justify-content:center;
         padding-left:10px;
         padding-right:10px;
         height: 50px;
         margin-top: 15vh;
+        font-size: 10.7vw;
     }  
 }
+
  
 .home .canvas {
     position: absolute;

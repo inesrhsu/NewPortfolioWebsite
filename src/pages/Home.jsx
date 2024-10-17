@@ -92,18 +92,20 @@ const AnimateText = ({text,textcolor}) => {
 const Home = () => {
   const [scrollOffset, setScrollOffset] = useState(0);
   const [scale, setScale] = useState(0.001 * window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [positionY, setPositionY] = useState(-0.001*window.innerHeight);
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
+  const videoRef3 = useRef(null);
 
   const handleMouseEnter = (videoRef) => {
-    if(videoRef.current) {
+    if(videoRef.current && videoRef.current.paused) {
         videoRef.current.play();
     }
   }
 
   const handleMouseLeave = (videoRef) => {
-    if(videoRef.current) {
+    if(videoRef.current && !videoRef.current.paused) {
         videoRef.current.pause();
     }
   }
@@ -120,7 +122,14 @@ const Home = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 600){
+      const newWidth = window.innerWidth;
+      setWindowWidth(newWidth);
+
+      if (window.innerWidth < 400){
+        setScale(0.002*window.innerWidth);
+        setPositionY(-0.5);
+      }
+      else if (window.innerWidth < 600){
         setScale(0.0016*window.innerWidth);
         setPositionY(-0.5);
       }
@@ -134,6 +143,7 @@ const Home = () => {
     };
 
     window.addEventListener('resize', handleResize);
+    handleResize();
     handleResize();
 
     return() => {
@@ -181,33 +191,40 @@ const Home = () => {
 
 
         <div className="video-container">
-          <video className="home-video" autoPlay={false} loop muted preload="auto" poster="/media/VRBHPhoto.png"
-            ref={videoRef1} 
-            onMouseEnter={() => handleMouseEnter(videoRef1)} 
-            onMouseLeave={() => handleMouseLeave(videoRef1)} 
-            onTouchStart={() => handleTouchStart(videoRef1)} >
-            <source src="https://dy4k3ny7v09me.cloudfront.net/vrBlackHole.mp4" type="video/mp4" />
-          </video> 
             <NavLink to={`/work#${categories[0].replace(/\s+/g, '-')}`}>
               <AnimateText text={`Physics and Space Simulation`} textcolor={'var(--bg-color)'} />
             </NavLink>
+          <video className="home-video" autoPlay={true} loop muted preload="auto" poster="/media/VRBHPhoto.png">
+            {/* ref={videoRef1} 
+            onMouseEnter={() => handleMouseEnter(videoRef1)} 
+            onMouseLeave={() => handleMouseLeave(videoRef1)} 
+            onTouchStart={() => handleTouchStart(videoRef1)} > */}
+            <source src="https://dy4k3ny7v09me.cloudfront.net/vrBlackHole.mp4" type="video/mp4" />
+          </video> 
         </div>
         <div className="video-container">
-          {/* <div className="overlay-text2"> */}
-            
               <NavLink to={`/work#${categories[1].replace(/\s+/g, '-')}`}>
                 <AnimateText text={`Animation`} textcolor={'var(--first-color)'}/>
               </NavLink> 
-            
-          {/* </div> */}
-          <video className="home-video" autoPlay={false} loop muted preload="auto" poster="/media/SoulsPhoto5.png"
-            ref={videoRef2} 
+          <video className="home-video" autoPlay={true} loop muted preload="auto" poster="/media/SoulsPhoto5.png">
+            {/* ref={videoRef2} 
             onMouseEnter={() => handleMouseEnter(videoRef2)} 
             onMouseLeave={() => handleMouseLeave(videoRef2)} 
-            onTouchStart={() => handleTouchStart(videoRef2)} >
+            onTouchStart={() => handleTouchStart(videoRef2)} > */}
             <source src="https://dy4k3ny7v09me.cloudfront.net/souls.mp4" type="video/mp4" />
           </video>
-         
+        </div>
+        <div className="video-container">
+              <NavLink to={`/work#${categories[3].replace(/\s+/g, '-')}`}>
+                <AnimateText text={`Computer Generated Art`} textcolor={'var(--first-color)'}/>
+              </NavLink> 
+          <video className="home-video" autoPlay={true} loop muted preload="auto" poster="/media/HappyDumplingPhoto.png">
+            {/* ref={videoRef3} 
+            onMouseEnter={() => handleMouseEnter(videoRef3)} 
+            onMouseLeave={() => handleMouseLeave(videoRef3)} 
+            onTouchStart={() => handleTouchStart(videoRef3)} > */}
+            <source src="/media/HappyDumplingIcon.mp4" type="video/mp4" />
+          </video>
         </div>
         <Footer />  
     </section>
