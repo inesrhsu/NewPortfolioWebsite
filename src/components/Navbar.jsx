@@ -22,33 +22,44 @@ const Navbar = ({ scrollOffset }) => {
   }, [location.pathname, scrollOffset]); //run useEffect when location pathname changes
 
   return (
-    <header>
 
+      <>
         { (showName || location.pathname !== "/") ? (
-        <NavLink to="/" className="icon">
-          <p>INÉS RODRÍGUEZ HSU</p>
-        </NavLink> 
+          <header>
+            <NavLink to="/" className="icon">
+              <p>INÉS RODRÍGUEZ HSU</p>
+            </NavLink> 
+            <nav className="navbar">
+              <NavLink to="/" className="item">
+                <p>Home</p>
+              </NavLink>
+              <NavLink to="/about" className="item">
+                <p>About</p>
+              </NavLink>
+              <NavLink to="/work" className="item">
+                <p>Work</p>
+              </NavLink>
+            </nav>
+          </header>
        ) : (
-        <NavLink to="/" className="icon">
-          <p> </p>
-        </NavLink> 
+        <header style={{boxShadow:'none'}} >
+          <NavLink to="/" className="icon">
+            <p> </p>
+          </NavLink> 
+          <nav className="navbar" style={{alignItems:'space-between'}}>
+            <NavLink to="/" className="item">
+              <p>Home</p>
+            </NavLink>
+            <NavLink to="/about" className="item">
+              <p>About</p>
+            </NavLink>
+            <NavLink to="/work" className="item">
+              <p>Work</p>
+            </NavLink>
+          </nav>
+        </header>
       )}
-
-        <nav className="navbar">
-          <NavLink to="/" className="item">
-            <p>Home</p>
-          </NavLink>
-          <NavLink to="/about" className="item">
-            <p>About</p>
-          </NavLink>
-          <NavLink to="/work" className="item">
-            <p>Work</p>
-          </NavLink>
-          {/* <NavLink to="/contact" className="item">
-            <p>Contact</p>
-          </NavLink> */}
-        </nav>
-    </header>
+      </>
   )
 }
  
