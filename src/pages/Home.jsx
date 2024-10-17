@@ -194,7 +194,7 @@ const Home = () => {
             <NavLink to={`/work#${categories[0].replace(/\s+/g, '-')}`}>
               <AnimateText text={`Physics and Space Simulation`} textcolor={'var(--bg-color)'} />
             </NavLink>
-          <video className="home-video" autoPlay={true} loop muted preload="auto" poster="/media/VRBHPhoto.png">
+          <video className="home-video" autoPlay={true} loop muted preload="auto" playsInline webkit-playsinline="true" poster="/media/VRBHPhoto.png">
             {/* ref={videoRef1} 
             onMouseEnter={() => handleMouseEnter(videoRef1)} 
             onMouseLeave={() => handleMouseLeave(videoRef1)} 
@@ -206,7 +206,7 @@ const Home = () => {
               <NavLink to={`/work#${categories[1].replace(/\s+/g, '-')}`}>
                 <AnimateText text={`Animation`} textcolor={'var(--first-color)'}/>
               </NavLink> 
-          <video className="home-video" autoPlay={true} loop muted preload="auto" poster="/media/SoulsPhoto5.png">
+          <video className="home-video" autoPlay={true} loop muted preload="auto" playsInline webkit-playsinline="true" poster="/media/SoulsPhoto5.png">
             {/* ref={videoRef2} 
             onMouseEnter={() => handleMouseEnter(videoRef2)} 
             onMouseLeave={() => handleMouseLeave(videoRef2)} 
@@ -218,7 +218,7 @@ const Home = () => {
               <NavLink to={`/work#${categories[3].replace(/\s+/g, '-')}`}>
                 <AnimateText text={`Computer Generated Art`} textcolor={'var(--first-color)'}/>
               </NavLink> 
-          <video className="home-video" autoPlay={true} loop muted preload="auto" poster="/media/HappyDumplingPhoto.png">
+          <video className="home-video" autoPlay={true} loop muted preload="auto" playsInline webkit-playsinline="true" poster="/media/HappyDumplingPhoto.png">
             {/* ref={videoRef3} 
             onMouseEnter={() => handleMouseEnter(videoRef3)} 
             onMouseLeave={() => handleMouseLeave(videoRef3)} 
