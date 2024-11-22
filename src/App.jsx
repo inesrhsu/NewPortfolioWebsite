@@ -1,11 +1,12 @@
 import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import {Home, About, Work, Contact} from './pages';
+import {Home, About, Work, Contact, Photography} from './pages';
 import {Coral, VRBlackHole, StarCluster, IrisSim,Souls,Spring,Year2235,
-  AIAliens,HappyDumplings,StellarDrawingTool,ButterflyDandelions,SunMoonLakeTale,
-  SpawningOfSouls,StoneNightmare,FountainOfLife,
-  Carousel,Winter,Angel,SeaCave,ShaderExperiments} from './projects';
+  AIAliens,HappyDumplings,StellarDrawingTool,ButterflyDandelions,
+  ThatTimeIGotReincarnatedAsAFerret,SunMoonLakeTale,SpawningOfSouls,
+  StoneNightmare,FountainOfLife,Carousel,Winter,Angel,SeaCave,ShaderExperiments,
+  PhotographsForTheFuture, Carinavis, Computation} from './projects';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
                 {/* <Route path="/home" element={<Home/>} /> */}
                 <Route path="/about" element={<About/>} />
                 <Route path="/work" element={<Work/>} />
+                <Route path="/photography" element={<Photography/>} />
                 <Route path="/contact" element={<Contact/>} />
                 
                 <Route path="/coral" element={<Coral/>} />
@@ -30,6 +32,7 @@ const App = () => {
                 <Route path="/happyDumplings" element={<HappyDumplings/>} />
                 <Route path="/stellarDrawingTool" element={<StellarDrawingTool/>} />
                 <Route path="/butterflyDandelions" element={<ButterflyDandelions/>} />
+                <Route path="/thatTimeIGotReincarnatedAsAFerret" element={<ThatTimeIGotReincarnatedAsAFerret/>} />
                 <Route path="/sunMoonLakeTale" element={<SunMoonLakeTale/>} />
                 <Route path="/spawningOfSouls" element={<SpawningOfSouls/>} />
                 <Route path="/stoneNightmare" element={<StoneNightmare/>} />
@@ -38,7 +41,10 @@ const App = () => {
                 <Route path="/winter" element={<Winter/>} />
                 <Route path="/angel" element={<Angel/>} />
                 <Route path="/seaCave" element={<SeaCave/>} />
-                <Route path="/ShaderExperiments" element={<ShaderExperiments/>} />
+                <Route path="/shaderExperiments" element={<ShaderExperiments/>} />
+                <Route path="/photographsForTheFuture" element={<PhotographsForTheFuture/>} />
+                <Route path="/carinavis" element={<Carinavis/>} />
+                <Route path="/computation" element={<Computation/>} />
             </Routes>
             <Footer />
         </Router>

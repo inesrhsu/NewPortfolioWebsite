@@ -6,9 +6,6 @@ const VRBlackHole = () => {
   return (
     
     <section className="projectpage">
-      {/* <NavLink to="/home" className="navbarspace">
-        <p>INÉS RODRÍGUEZ HSU</p>
-      </NavLink> */}
       <div className="projecttitle">
       Falling through the Universe into a Black Hole: A VR Experience
       </div>

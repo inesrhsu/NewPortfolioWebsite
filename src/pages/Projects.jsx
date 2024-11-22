@@ -222,6 +222,41 @@ export const projects = [
     },
     {
         id:12,
+        idname:'thatTimeIGotReincarnatedAsAFerret',
+        title: 'That Time I Got Reincarnated as a Ferret and Forced to Climb for My Freedom',
+        description:
+        `I collaborated as a programmer in developing the Unity game 'That Time I 
+        Got Reincarnated As A Ferret and Forced to Climb for My Freedom', together 
+        with Hanke Chen (programmer and music) and Ashley Kim (producer and artist).
+
+        'That Time I Got Reincarnated as a Ferret and Forced to Climb for My Freedom' 
+        is a fun game in which a ferret needs to grab onto colorful rocks to climb out 
+        of a hole while random objects of increasingly bigger size fall into the hole. 
+
+        My role in the game involved programming several aspects of the game:
+        - A grid based and path based random object placement algorithm to place 
+        the climbing rocks, such that each time the game someone plays the game 
+        it generates a new map of colored rocks.
+        - A rock grabbing detection game mechanism, such that the game detects when 
+        the ferret can grab a rock, has grabbed a rock or lets go of a rock, and 
+        whether the ferret is grabbing onto any rocks or should fall.
+        - Dropping of random objects, at timed intervals which get shorter the higher
+        a player climbs. The dropped objects also get larger as the player climbs.
+        - I programmed and animated the game condition such that the ferret 
+        floats upwards once it grabs the trophy, then eventually the ferret falls back
+        into the ferret hole and reincarnates as a random object. This shows a 'You Won'
+        page. If the ferret falls it falls to the bottom of the hole, and this shows a 
+        'You Lost' page.  
+        - I also implemented the mini-map feature of the game to show the current 
+        location of the ferret within the full height of the climbing wall, to show
+        the player their progress. 
+        `,
+        media: '/media/thatTimeIGotReincarnatedAsAFerret.png',
+        year: '2022',
+        categories:['Games and 3D Environments'],
+    },
+    {
+        id:13,
         idname:'sunMoonLakeTale',
         title: 'Sun Moon Lake Tale',
         description:
@@ -232,21 +267,21 @@ export const projects = [
         Unreal Engine 4.`,
         media: '/media/sunMoonLake.png', 
         year:'2022',
-         categories:['3D environments'],
+         categories:['Games and 3D Environments'],
     },
     {
-        id:13,
+        id:14,
         idname:'spawningOfSouls',
         title: 'The Spawning of the Souls',
         description:
         `A 3D imaginary world which souls inhabit. Made using Unity and Blender.`,
         media: '/media/spawningOfTheSouls.png', 
         year:'2022',
-         categories:['3D environments'],
+         categories:['Games and 3D Environments'],
 
     },
     {
-        id:14,
+        id:15,
         idname:'fountainOfLife',
         title: 'Fountain of Life',
         description:
@@ -259,11 +294,11 @@ export const projects = [
         media: '/media/FountainOfLifeIcon.mp4',
         poster: '/media/FountainOfLifePhoto1.png',
         year:'2022',
-        categories:['3D environments'],
+        categories:['Games and 3D Environments'],
 
     },
     {
-        id:15,
+        id:16,
         idname:'stoneNightmare',
         title: 'The Stone Nightmare',
         description:
@@ -274,11 +309,10 @@ export const projects = [
         media: '/media/StoneNightmareIcon.mp4', 
         poster: '/media/StoneNightmarePhoto1.png',
         year:'2022',
-         categories:['3D environments'],
+         categories:['Games and 3D Environments'],
     },
-    
     {
-        id:16,
+        id:17,
         idname:'carousel',
         title: 'Carousel',
         description:
@@ -292,7 +326,7 @@ export const projects = [
         categories:['Animation'],
     },
     {
-        id:17,
+        id:18,
         idname:'winter',
         title: 'Winter',
         description:
@@ -302,7 +336,7 @@ export const projects = [
         categories:['Print'],
     },
     {
-        id:18,
+        id:19,
         idname:'angel',
         title: 'Angel',
         description:
@@ -312,7 +346,7 @@ export const projects = [
         categories:['Print'],
     },
     {
-        id:19,
+        id:20,
         idname:'seaCave',
         title: 'Sea Cave',
         description:
@@ -322,20 +356,149 @@ export const projects = [
         categories:['Print'],
     },
     {
-        id:20,
+        id:21,
         idname:'shaderExperiments',
         title: 'Shader Experiments',
         description:
         `Shader experiments.`,
-        media: '/media/BlueWavesWhiteSphere.mp4',
-        poster: '/media/BlueWavesWhiteSpherePhoto.png',
+        media: '/media/OneWavyBallAndTwoWavySquares.mp4',
+        poster: '/media/ShaderExperimentsPhoto.png',
         year: '2021',
         categories:['Computer Generated Art'],
-    }
+    },
+    {
+        id:22,
+        idname:'photographsForTheFuture',
+        title: 'Photographs for the Future',
+        description:
+        `Film photographs for the future. In 2022 I took film photographs in rolls of black 
+        and white film. I put these rolls of film in capsules with instructions for someone,
+        in the future, to take pictures using the same film. In this way, creating double 
+        exposure images of two different spaces and times. Through this project I wanted to 
+        use photographs to send messages into the future and create art pieces that were 
+        started by me in 2022 and will be completed and enjoyed by others many years later. 
+        Each photograph will intertwine my story with that of someone in the future: 
+
+        My future child when they are 20 (the same age I was when I took these photographs).
+        A future finder of a capsule in the Year 2122 (100 years after I took these photographs).
+        A future human who travels to Mars once Mars in inhabited.
+
+        Through these film capsules there will be photographs showing my life, things I cherished and
+        places I visited daily together with those of my future child, when we are both the same age, 20; 
+        photographs showing my life in 2022 together with that of someone living 100 years later; and photographs
+        showing our life here on Earth together with life in a future habitat, Mars.
+
+        I stored the film in black canisters, and laminated the paper instructions with plastic, and 
+        placed them inside tightly closed pipe and pipe cap capsules, so that hopefully, they survive
+        the pass of time.
+        `,
+        media: '/media/photographsForTheFuture.png',
+        year: '2022',
+        categories:['Mixed Media'],
+    },
+    {
+        id:23,
+        idname:'carinavis',
+        title: 'Carinavis',
+        description:
+        `Carinavis is a project that tells the story of a future astrological cult 
+        in a far away planetary system, whose followers worship the star Eta Carinae
+        and interact with each other silently through their minds. Brain chips 
+        connect them spiritually to each other and they gather in temples virtually 
+        through virtual reality visors. The Carinivs vanish mysteriously after the
+        supernova explosion of the Eta Carinae star, leaving behind remains of stone 
+        temples built on asteroids.
+
+        The following is the script of an astroarcheologist, recounting the findings
+        of this future, dystopian, vanished civilization. Along with it are 3D models 
+        of remains of the stone temples made after stars the Carinivs worshipped, an 
+        image of a reconstruction of their clothing and evidence of their existence.
+        `,
+        media: '/media/carinavisPhoto.png',
+        year: '2022',
+        categories:['Mixed Media'],
+    },
+    {
+        id:23,
+        idname:'computation',
+        title: 'Computer Vision and Computer Graphics',
+        description:
+        `Computer Vision and Computer Graphics Projects:
+        
+        Detection of Lines in Images
+        - I implemented an image line detector using computer vision techniques 
+        using Python
+        - Wrote Gaussian and Sobel filter convolutions and non-maximum suppression 
+        to find edge intensity and orientation, and applied Hough Transform to compute 
+        and output lines detected in images
+
+        Augmented Reality Object Tracking and Replacement Application
+        - I developed an AR application to detect and track an object at any image 
+        angle and replace it by a desired image
+        - I achieved this by computing image homographies using a RANSAC algorithm 
+        and using BRIEF image descriptor to match image features
+
+        3D Reconstruction from 2D Images 	             					           	         Oct 2023
+        - I wrote program to reconstruct a 3D environment given two 2D images by 
+        implementing the eight-point algorithm, computing epipolar correspondences, 
+        the essential matrix and triangulation
+        - Rectified images, to obtain depth and disparity maps to create a dense 
+        3D reconstruction
+        - Implemented camera pose estimation algorithm given 2D image points and 
+        corresponding 3D points
+
+        Scene Recognition
+        - I developed image classification scene recognition program using a 
+        bag-of-words algorithm by extracting filter responses of a large dataset 
+        of images, sampling image points using K-means clustering, computing 
+        visual word maps and histograms of image features and training image set 
+        on feature histograms to identify image types
+        - Compared performance of random points and Harris corner detector points 
+        sampling implementations 
+
+        Convolutional Neural Network to Convert Handwriting to Text                                                       Nov 2023
+        - Implemented convolutional neural network program, computing forward 
+        propagation and back propagation using softmax and sigmoid activation 
+        functions to convert handwritten text images to text
+        - Trained neural network on handwritten text image data set using one 
+        hidden layer with 64 hidden units for 30 epochs, and used network to parse 
+        text in new images
+
+        Video Tracking Alignment
+        - Wrote program to track an object with a bounding box throughout a video, 
+        including objects moving away from or closer to the camera and passing behind 
+        other objects
+        - Implemented Lucas-Kanade forward additive alignment algorithm with 
+        translation as well as with full-affine transformation for video tracking 
+        (additive increment to warp parameters each frame)
+        - Optimized computational performance with implementation of Matthews-Baker 
+        inverse compositional alignment, gradient descent algorithm with affine 
+        transformation (with direct warp update per frame)
+
+        Rasterizer
+        - Implemented rasterizer in software (C++) including line and triangle 
+        rasterization, depth testing and blending, perspective correct attribute 
+        interpolation, mip-mapping and supersampling
+
+        Geometric Mesh Editing
+        - Developed interactive mesh editing of triangular meshes, implementing 
+        vertex, edge and face operations such as edge splitting, edge and face 
+        collapse, face extrude, edge and vertex dissolve 
+        - Implemented mesh triangulation, Catmull-Clark mesh subdivision, and 
+        isometric remeshing operations
+
+        I completed these projects as part of the Computer Vision and Computer 
+        Graphics courses at Carnegie Mellon University.
+        `,
+        media: '/media/cmu.png',
+        year: '2022',
+        categories:['Computation'],
+    },
+
 ];
 
 export const categories = ["Physics and Space Simulation", "Animation", 
-    "Sculpture and Installation", "Computer Generated Art",  "3D environments",
-    "Print"];
+    "Sculpture and Installation", "Computer Generated Art", "Games and 3D Environments",
+    "Print", "Mixed Media", "Computation"];
 
     

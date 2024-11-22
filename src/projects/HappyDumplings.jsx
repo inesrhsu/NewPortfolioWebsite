@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import {ReactP5Wrapper} from "@p5-wrapper/react";
 import HappyDumplingSketch from "./HappyDumplingp5js";
 import HappyDumplingSketch2 from "./HappyDumplingp5js2";
+import HappyDumplingSketch3 from "./HappyDumplingp5js3";
+import HappyDumplingSketch4 from "./HappyDumplingp5js4";
 
 const HappyDumplings = () => {
   return (
@@ -35,6 +37,12 @@ const HappyDumplings = () => {
       </div>
       <div className="project-photo1"> 
         <ReactP5Wrapper sketch = {HappyDumplingSketch2}/>
+      </div>
+      <div className="project-photo1"> 
+        <ReactP5Wrapper sketch = {HappyDumplingSketch3}/>
+      </div>
+      <div className="project-photo1"> 
+        <ReactP5Wrapper sketch = {HappyDumplingSketch4}/>
       </div>
       <div className="footer"/>
     </section>

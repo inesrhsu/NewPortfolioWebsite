@@ -9,6 +9,7 @@ import AIAliens from './AIAliens';
 import HappyDumplings from './HappyDumplings';
 import StellarDrawingTool from './StellarDrawingTool';
 import ButterflyDandelions from './ButterflyDandelions';
+import ThatTimeIGotReincarnatedAsAFerret from './ThatTimeIGotReincarnatedAsAFerret';
 import SunMoonLakeTale from './SunMoonLakeTale';
 import SpawningOfSouls from './SpawningOfSouls';
 import StoneNightmare from './StoneNightmare';
@@ -18,7 +19,11 @@ import Winter from './Winter';
 import Angel from './Angel';
 import SeaCave from './SeaCave';
 import ShaderExperiments from './ShaderExperiments';
+import PhotographsForTheFuture from './PhotographsForTheFuture';
+import Carinavis from './Carinavis';
+import Computation from './Computation'
 
 export {Coral,VRBlackHole,StarCluster,IrisSim,Souls,Spring,Year2235,AIAliens,
-    HappyDumplings,StellarDrawingTool,ButterflyDandelions,SunMoonLakeTale,
-    SpawningOfSouls,StoneNightmare,FountainOfLife,Carousel,Winter,Angel,SeaCave,ShaderExperiments};
+    HappyDumplings,StellarDrawingTool,ButterflyDandelions,ThatTimeIGotReincarnatedAsAFerret,
+    SunMoonLakeTale,SpawningOfSouls,StoneNightmare,FountainOfLife,Carousel,Winter,
+    Angel,SeaCave,ShaderExperiments,PhotographsForTheFuture,Carinavis,Computation};

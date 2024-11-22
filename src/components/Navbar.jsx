@@ -39,6 +39,9 @@ const Navbar = ({ scrollOffset }) => {
               <NavLink to="/work" className="item">
                 <p>Work</p>
               </NavLink>
+              <NavLink to="/photography" className="item">
+                <p>Photography</p>
+              </NavLink>
             </nav>
           </header>
        ) : (

@@ -52,15 +52,15 @@ const HappyDumplingsSketch2 = (p5) =>{
         mouthrot = p5.random([p5.PI,2*p5.PI]);
 
     } 
-    for (var i = 0; i < 6; i++){
+    for (var i = 0; i < 6; i++){ //draw all dumplings
         ang += 45;
         x += 1;
         y += 1;
-        for (var j = 0; j < 6; j++){
+        for (var j = 0; j < 6; j++){ 
             ang+=45;
             p5.push();
             p5.translate((j*100 + 50)*ratio, (100*i + 50)*ratio);
-            p5.rotate(p5.radians(ang));
+            p5.rotate(p5.radians(ang));//body formed by three ellipses
             p5.ellipse(0,11*ratio,60*ratio,45*ratio);
             p5.rotate(p5.radians(35));
             p5.ellipse(9*ratio,-1*ratio,45*ratio,35*ratio);
@@ -68,12 +68,13 @@ const HappyDumplingsSketch2 = (p5) =>{
             p5.ellipse(-9*ratio,-1*ratio,45*ratio,35*ratio);
             p5.rotate(p5.radians(35));
             p5.stroke(10);
-            p5.noFill();
+            p5.noFill();//eyes and mouth
             p5.arc(-10*ratio, 5*ratio, eyew*ratio, eyeh*ratio, p5.PI, eyerotl);
             p5.arc(10*ratio, 5*ratio, eyew*ratio, eyeh*ratio, p5.PI, eyerotr);
             p5.arc(0, 11*ratio, mouthw*ratio, 5*ratio, 0, mouthrot);
             p5.pop();
             
+            //top of the bun (three ellipses)
             p5.push();
             p5.translate((j*100 + 50)*ratio, (100*i + 50)*ratio);
             p5.rotate(p5.radians(ang));
