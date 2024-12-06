@@ -107,7 +107,7 @@
 .coral-model{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5vw;
     max-width: 90vw;
     max-height: 75vh;
     background-color: var(--bg-color);
@@ -116,7 +116,7 @@
     font-family: var(--body-font);
     color: var(--first-color);
     z-index: 0;
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
 }
 
 .home-video{

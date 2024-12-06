@@ -134,7 +134,7 @@ const Home = () => {
         setPositionY(-1.0);
       }
       else if(window.innerWidth < 1000){
-        setScale(0.0016*window.innerWidth);
+        setScale(0.0017*window.innerWidth);
         setPositionY(-0.75);
       } 
       else if(window.innerWidth < 1400){
@@ -194,7 +194,7 @@ const Home = () => {
               <Suspense fallback={<Loader />}>
                   <Float
                   speed={1} // Animation speed, defaults to 1
-                  rotationIntensity={1} // XYZ rotation intensity, defaults to 1
+                  rotationIntensity={0.5} // XYZ rotation intensity, defaults to 1
                   floatIntensity={1} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
                   floatingRange={[-0.01,0.01]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
                   >
