@@ -108,7 +108,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    max-width: 90vw;
     max-height: 75vh;
     background-color: var(--bg-color);
     display:flex;
