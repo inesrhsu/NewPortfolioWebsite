@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const FountainOfLife = () => {
   return (
@@ -34,7 +35,7 @@ const FountainOfLife = () => {
         <img className="project-allphotos" src='/media/FountainOfLifePhoto2.png' alt="Screenshot from Fountain of Life 3D Animation"></img>
       </div>
       <div className="footer"/>   
-        
+      <Footer/>
     </section>
     
   );

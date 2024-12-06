@@ -1,0 +1,30 @@
+const sanctiPetriPhotoArr = [
+    { id: 1, src: '/photo/sanctiPetri/sanctiPetri1.jpg', alt: 'Sancti Petri' },
+    { id: 2, src: '/photo/sanctiPetri/sanctiPetri2.jpg', alt: 'Sancti Petri' },
+    { id: 3, src: '/photo/sanctiPetri/sanctiPetri3.jpg', alt: 'Sancti Petri' },
+    { id: 4, src: '/photo/sanctiPetri/sanctiPetri4.jpg', alt: 'Sancti Petri' },
+    { id: 5, src: '/photo/sanctiPetri/sanctiPetri5.jpg', alt: 'Sancti Petri' },
+    { id: 6, src: '/photo/sanctiPetri/sanctiPetri6.jpg', alt: 'Sancti Petri' },
+    { id: 7, src: '/photo/sanctiPetri/sanctiPetri7.jpg', alt: 'Sancti Petri' },
+    { id: 8, src: '/photo/sanctiPetri/sanctiPetri8.jpg', alt: 'Sancti Petri' },
+    { id: 9, src: '/photo/sanctiPetri/sanctiPetri9.jpg', alt: 'Sancti Petri' },
+    { id: 10, src: '/photo/sanctiPetri/sanctiPetri10.jpg', alt: 'Sancti Petri' },
+    { id: 11, src: '/photo/sanctiPetri/sanctiPetri11.jpg', alt: 'Sancti Petri' },
+    { id: 12, src: '/photo/sanctiPetri/sanctiPetri12.jpg', alt: 'Sancti Petri' },
+    { id: 13, src: '/photo/sanctiPetri/sanctiPetri13.jpg', alt: 'Sancti Petri' },
+    { id: 14, src: '/photo/sanctiPetri/sanctiPetri14.jpg', alt: 'Sancti Petri' },
+    { id: 15, src: '/photo/sanctiPetri/sanctiPetri15.jpg', alt: 'Sancti Petri' },
+    { id: 16, src: '/photo/sanctiPetri/sanctiPetri16.jpg', alt: 'Sancti Petri' },
+    { id: 17, src: '/photo/sanctiPetri/sanctiPetri17.jpg', alt: 'Sancti Petri' },
+    { id: 18, src: '/photo/sanctiPetri/sanctiPetri18.jpg', alt: 'Sancti Petri' },
+    { id: 19, src: '/photo/sanctiPetri/sanctiPetri19.jpg', alt: 'Sancti Petri' },
+    { id: 20, src: '/photo/sanctiPetri/sanctiPetri20.jpg', alt: 'Sancti Petri' },
+    { id: 21, src: '/photo/sanctiPetri/sanctiPetri21.jpg', alt: 'Sancti Petri' },
+    { id: 22, src: '/photo/sanctiPetri/sanctiPetri22.jpg', alt: 'Sancti Petri' },
+    { id: 23, src: '/photo/sanctiPetri/sanctiPetri23.jpg', alt: 'Sancti Petri' },
+    { id: 24, src: '/photo/sanctiPetri/sanctiPetri24.jpg', alt: 'Sancti Petri' },
+    { id: 25, src: '/photo/sanctiPetri/sanctiPetri25.jpg', alt: 'Sancti Petri' },    
+   
+];
+
+export default sanctiPetriPhotoArr;

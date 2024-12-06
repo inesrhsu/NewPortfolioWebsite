@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const IrisSim = () => {
   return (
@@ -40,6 +41,7 @@ const IrisSim = () => {
         <br /><br />
       </div>
       <div className="footer"/>   
+      <Footer/>
     </section>
     
   );

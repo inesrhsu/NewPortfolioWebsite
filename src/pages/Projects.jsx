@@ -419,7 +419,7 @@ export const projects = [
         categories:['Mixed Media'],
     },
     {
-        id:23,
+        id:24,
         idname:'computation',
         title: 'Computer Vision and Computer Graphics',
         description:
@@ -492,6 +492,19 @@ export const projects = [
         `,
         media: '/media/cmu.png',
         year: '2022',
+        categories:['Computation'],
+    },
+    {
+        id:25,
+        idname:'personalWebsite',
+        title: 'Personal Website',
+        description:
+        `Personal Website:
+        
+        I developed this website using React.js, React Three Fiber, p5.js and CSS.
+        `,
+        media: '/media/website.png',
+        year: '2024',
         categories:['Computation'],
     },
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const Carousel = () => {
   return (
@@ -34,7 +35,7 @@ const Carousel = () => {
         <img className="project-allphotos" src='/media/CarouselPhoto4.png' alt="Screenshot from Carousel Animation"></img>
       </div>
       <div className="footer"/>   
-        
+      <Footer/>
     </section>
     
   );

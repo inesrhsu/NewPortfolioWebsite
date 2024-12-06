@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const Spring = () => {
   return (
@@ -23,7 +24,8 @@ const Spring = () => {
       by Anne Sophie Mutter.
       <br /><br />
       </div>
-      <div className="footer"/>  
+      <div className="footer"/>
+      <Footer/>  
     </section>
     
   );

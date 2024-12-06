@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const StarCluster = () => {
   return (
@@ -52,7 +53,8 @@ const StarCluster = () => {
       View research poster:
       </div>
       <img className="project-photo1" src="/media/StarClusterPoster.png" alt="Star Cluster Evolution Research Poster"></img>
-      <div className="footer"/>  
+      <div className="footer"/> 
+      <Footer/> 
     </section>
     
   );

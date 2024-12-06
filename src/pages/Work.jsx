@@ -1,5 +1,6 @@
 import React, {useState, useRef, useEffect} from "react";
 import "./Pages.css";
+import Footer from '../components/Footer';
 import { projects, categories } from './Projects';
 import { useNavigate } from "react-router-dom";
 
@@ -136,6 +137,7 @@ const Work = () => {
         )
       })}
       <div className="footer"/>  
+      <Footer/>
     </div>
   );
 };

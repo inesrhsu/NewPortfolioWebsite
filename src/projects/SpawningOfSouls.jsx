@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const SpawningOfSouls = () => {
   return (
@@ -19,6 +20,7 @@ const SpawningOfSouls = () => {
       </div>
       
       <div className="footer"/>  
+      <Footer/>
     </section>
     
   );

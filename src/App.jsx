@@ -6,7 +6,7 @@ import {Coral, VRBlackHole, StarCluster, IrisSim,Souls,Spring,Year2235,
   AIAliens,HappyDumplings,StellarDrawingTool,ButterflyDandelions,
   ThatTimeIGotReincarnatedAsAFerret,SunMoonLakeTale,SpawningOfSouls,
   StoneNightmare,FountainOfLife,Carousel,Winter,Angel,SeaCave,ShaderExperiments,
-  PhotographsForTheFuture, Carinavis, Computation} from './projects';
+  PhotographsForTheFuture, Carinavis, Computation, PersonalWebsite} from './projects';
 
 const App = () => {
   return (
@@ -45,8 +45,9 @@ const App = () => {
                 <Route path="/photographsForTheFuture" element={<PhotographsForTheFuture/>} />
                 <Route path="/carinavis" element={<Carinavis/>} />
                 <Route path="/computation" element={<Computation/>} />
+                <Route path="/personalWebsite" element={<PersonalWebsite/>} />
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
         </Router>
     </main>
   )

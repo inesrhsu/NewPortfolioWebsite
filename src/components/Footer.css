@@ -1,5 +1,5 @@
 footer{
-  height: 100px;
+  height: 150px;
   width: 100vw;
   background-color: var(--first-color);
   color: var(--bg-color);
@@ -12,9 +12,9 @@ footer{
   position:relative;
   
 }
-@media (max-width:498px){
+@media (max-width:500px){
     footer {
-        height: 70px;
+      height: 70px;
     }  
 }
 
@@ -24,7 +24,7 @@ footer{
     font-family: var(--title-font);
     font-size:calc(min(3.5vw,24px));
     font-weight: var(--font-light-bold);
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 .footer-text{
     position:relative;

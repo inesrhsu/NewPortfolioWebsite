@@ -22,8 +22,10 @@ import ShaderExperiments from './ShaderExperiments';
 import PhotographsForTheFuture from './PhotographsForTheFuture';
 import Carinavis from './Carinavis';
 import Computation from './Computation'
+import PersonalWebsite from './PersonalWebsite';
 
 export {Coral,VRBlackHole,StarCluster,IrisSim,Souls,Spring,Year2235,AIAliens,
     HappyDumplings,StellarDrawingTool,ButterflyDandelions,ThatTimeIGotReincarnatedAsAFerret,
     SunMoonLakeTale,SpawningOfSouls,StoneNightmare,FountainOfLife,Carousel,Winter,
-    Angel,SeaCave,ShaderExperiments,PhotographsForTheFuture,Carinavis,Computation};
+    Angel,SeaCave,ShaderExperiments,PhotographsForTheFuture,Carinavis,Computation,
+    PersonalWebsite};

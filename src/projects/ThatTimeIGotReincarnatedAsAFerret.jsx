@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const ThatTimeIGotReincarnatedAsAFerret = () => {
   return (
@@ -61,6 +62,7 @@ const ThatTimeIGotReincarnatedAsAFerret = () => {
         <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerretPhoto10.png' alt="Losing screen in 'That Time I Got Reincarnated as a Ferret'"></img>
       </div>
       <div className="footer"/>   
+      <Footer/>
     </section>
     
   );

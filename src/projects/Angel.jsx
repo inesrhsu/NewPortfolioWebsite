@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const Angel = () => {
   return (
@@ -18,6 +19,7 @@ const Angel = () => {
         <br /><br />
       </div>
       <div className="footer"/>    
+      <Footer/>
     </section>
     
   );

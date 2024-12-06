@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const SunMoonLakeTale = () => {
   return (
@@ -30,7 +31,8 @@ const SunMoonLakeTale = () => {
         <img className="project-allphotos" src='/media/SunMoonLakePhoto3.png' alt="Photograph of my Coral installation"></img>
         <img className="project-allphotos" src='/media/SunMoonLakePhoto4.png' alt="Photograph of my Coral installation"></img>
       </div>
-      <div className="footer"/>   
+      <div className="footer"/> 
+      <Footer/>  
     </section>
     
   );

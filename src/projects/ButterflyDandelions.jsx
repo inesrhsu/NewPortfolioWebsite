@@ -3,6 +3,7 @@ import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import {ReactP5Wrapper} from "@p5-wrapper/react";
 import ButterflyDandelionsSketch from "./ButterflyDandelionsp5js";
+import Footer from '../components/Footer';
 
 const ButterflyDandelions = () => {
   return (
@@ -32,6 +33,7 @@ const ButterflyDandelions = () => {
         <ReactP5Wrapper className="project-photo1" sketch = {ButterflyDandelionsSketch}/>
       </div>
       <div className="footer"/>
+      <Footer/>
     </section>
     
   );

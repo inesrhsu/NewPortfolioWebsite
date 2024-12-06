@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const Computation = () => {
   return (
@@ -16,9 +17,9 @@ const Computation = () => {
         <div className="projectsubtitle" style={{paddingBottom: 15}}>
             Detection of Lines in Images
         </div>
-        &#9702; I implemented an image line detector using computer vision techniques 
+        &bull; I implemented an image line detector using computer vision techniques 
         using Python<br />
-        &#9702;  Wrote Gaussian and Sobel filter convolutions and non-maximum suppression 
+        &bull;  Wrote Gaussian and Sobel filter convolutions and non-maximum suppression 
         to find edge intensity and orientation, and applied Hough Transform to compute 
         and output lines detected in images
         <br /><br />
@@ -95,7 +96,8 @@ const Computation = () => {
         Graphics courses at Carnegie Mellon University. 
         <br /><br />
       </div>
-      <div className="footer"/>  
+      <div className="footer"/>
+      <Footer/>  
     </section>
     
   );

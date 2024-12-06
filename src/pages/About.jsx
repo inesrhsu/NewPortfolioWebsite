@@ -1,5 +1,5 @@
 import React from 'react';
-import './../components/Footer.css'
+import Footer from '../components/Footer';
 import './Pages.css'
 import { NavLink } from "react-router-dom"
 
@@ -44,6 +44,7 @@ const About = () => {
           </div>
         <img className="project-photo1" src="/media/MeInMyCoral.png" alt="Photograph of me with my Coral installation"></img>
         <div className="footer"/>    
+        <Footer/>
     </section>
     
   );

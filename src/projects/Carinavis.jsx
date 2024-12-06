@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 
 const Carinavis = () => {
@@ -48,6 +49,7 @@ const Carinavis = () => {
         <img className="project-allphotos" src='/media/carinavisText2.png' alt="Carinavis Text 2"></img>
       </div>
       <div className="footer"/>
+      <Footer/>
     </section>
     
   );

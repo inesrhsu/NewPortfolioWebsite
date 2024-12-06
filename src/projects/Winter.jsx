@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const Winter = () => {
   return (
@@ -32,7 +33,7 @@ const Winter = () => {
       </div>
       <img className="project-photo1" src="/media/winterPhotoBW.png" alt="Winter B&W Woodblock Print" style={{paddingTop:25}}></img>
       <div className="footer"/> 
-        
+      <Footer/>
     </section>
     
   );

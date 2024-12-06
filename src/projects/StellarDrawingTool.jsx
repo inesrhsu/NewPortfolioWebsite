@@ -3,6 +3,7 @@ import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import {ReactP5Wrapper} from "@p5-wrapper/react";
 import StellarDrawingToolSketch from "./StellarDrawingToolp5js";
+import Footer from '../components/Footer';
 
 const StellarDrawingTool = () => {
   return (
@@ -36,6 +37,7 @@ const StellarDrawingTool = () => {
         <ReactP5Wrapper className="project-photo1" sketch = {StellarDrawingToolSketch}/>
       </div>
       <div className="footer"/>
+      <Footer/>
     </section>
     
   );

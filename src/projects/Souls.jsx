@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const Souls = () => {
   return (
@@ -33,6 +34,7 @@ const Souls = () => {
         <img className="project-allphotos" src='/media/SoulsPhoto4.png' alt="Screenshot from Souls animation"></img>
       </div>
       <div className="footer"/>   
+      <Footer/>
     </section>
     
   );

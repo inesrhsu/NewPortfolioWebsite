@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const SeaCave = () => {
   return (
@@ -18,6 +19,7 @@ const SeaCave = () => {
         <br /><br />
       </div>
       <div className="footer"/>
+      <Footer/>
     </section>
     
   );

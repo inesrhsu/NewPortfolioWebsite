@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 
 const PhotographsForTheFuture = () => {
@@ -50,6 +51,7 @@ const PhotographsForTheFuture = () => {
         <img className="project-allphotos" src='/media/photographsForTheFutureText8.png' alt="Photographs for the Future Instruction Text 8"></img>
       </div>
       <div className="footer"/>
+      <Footer/>
     </section>
     
   );

@@ -10,7 +10,7 @@ const Footer = () => {
               <a href='mailto:inesrohsu@gmail.com'> 
                 <div className="footer-text">
                     <span className="material-symbols-outlined">mail</span>
-                    inesrohsu@gmail.com
+                    inesrodriguezhsu@gmail.com
                 </div>
               </a>
             {/* </div> */}

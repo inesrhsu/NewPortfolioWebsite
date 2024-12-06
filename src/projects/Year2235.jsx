@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const Year2235 = () => {
   return (
@@ -34,7 +35,8 @@ const Year2235 = () => {
         life forms could look like. Access the project here: <NavLink to="/aIAliens">AI Aliens</NavLink>.
         <br /><br />
       </div>
-      <div className="footer"/>  
+      <div className="footer"/> 
+      <Footer/> 
     </section>
     
   );

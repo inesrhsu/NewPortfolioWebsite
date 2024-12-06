@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import {WaveScene1,WaveScene2,WaveScene3, WaveScene4, WaveScene5, WaveScene6, WaveScene7, Lollipops} from './shaderExperimentFiles';
+import Footer from '../components/Footer';
 
 const ShaderExperiments = () => {
   return (
@@ -98,7 +99,8 @@ const ShaderExperiments = () => {
         <Lollipops />  
       </div>
       
-      <div className="footer"/>  
+      <div className="footer"/> 
+      <Footer/> 
     </section>
 
     

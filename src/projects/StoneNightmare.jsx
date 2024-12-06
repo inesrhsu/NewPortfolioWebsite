@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const StoneNightmare = () => {
   return (
@@ -40,6 +41,7 @@ const StoneNightmare = () => {
         <img className="project-allphotos" src='/media/StoneNightmarePhoto10.png' alt="Screenshot from The Stone Nightmare Bitsy game"></img>
       </div>
       <div className="footer"/>   
+      <Footer/>
     </section>
     
   );

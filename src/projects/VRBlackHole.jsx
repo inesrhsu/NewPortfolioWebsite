@@ -1,6 +1,7 @@
 import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
+import Footer from '../components/Footer';
 
 const VRBlackHole = () => {
   return (
@@ -27,6 +28,7 @@ const VRBlackHole = () => {
       </div>
       
       <div className="footer"/> 
+      <Footer/>
     </section>
     
   );

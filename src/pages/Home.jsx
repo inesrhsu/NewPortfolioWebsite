@@ -38,7 +38,7 @@ const Coral = (props) => {
         }
         tl.current = gsap.timeline(); //animate coral model
         tl.current.to(ref.current.position, {duration: 2, y: -0.5, z:1});
-        tl.current.to(ref.current.rotation,{duration:2, x: Math.PI/6, y:Math.PI*3},0);
+        tl.current.to(ref.current.rotation,{duration:2, x: 0, y:Math.PI*3},0); //Math.PI/10
         // tl.current.to(ref.current.material, {duration:3, opacity: 0.5});
     },[scene]);
     return <primitive object={scene} ref={ref} {...props} />
@@ -135,8 +135,12 @@ const Home = () => {
       }
       else if(window.innerWidth < 1000){
         setScale(0.0013*window.innerWidth);
-      } else {
-        setScale(0.001 * window.innerWidth);
+      } 
+      else if(window.innerWidth < 1400){
+        setScale(0.001*window.innerWidth);
+      }
+      else {
+        setScale(0.0008 * window.innerWidth);
       }
       setPositionY(-0.001*window.innerHeight);
       
@@ -151,45 +155,55 @@ const Home = () => {
     };
   },[]);
 
-
   return (
     <section className="home">
       <Navbar scrollOffset={scrollOffset} />
-      
-
-      <Canvas dpr={[1, 2]}  camera={{fov:45}} >  {/*style={{"position":"absolute"}} */} 
-        <color attach="background" args={["#FFC0CB"]} />
-        <Html fullscreen >
-          <div className="maintitle">
+      <div className="maintitle">
             <p>INÉS RODRÍGUEZ HSU</p>
             {/* <p>Inés Rodríguez Hsu</p> */}
           </div>
-        </Html>
-         <PresentationControls speed={1.5} global={false}  polar={[-0.1, 3*Math.PI / 8]}>
+      <Canvas className="coralModel" dpr={[1, 2]}  camera={{fov:45, position:[0,0,5]}} >  {/*style={{"position":"absolute"}} */} 
+        <color attach="background" args={["#FFC0CB"]} />
+        {/* <Html fullscreen >
+          <div className="maintitle">
+            <p>INÉS RODRÍGUEZ HSU</p>
+            {/* <p>Inés Rodríguez Hsu</p> */}
+          {/* </div> */}
+        {/* </Html> */} 
+         {/* <PresentationControls speed={1.5} global={false}  polar={[-0.1, 3*Math.PI / 8]}> */}
           {/* <Stage environment={null} shadows={false} ground={false}> */}
             <ambientLight intensity={2} />
             <pointLight position={[10, 10, 10]} />
-            {/* <OrbitControls enableZoom={false}/> */}    
-            <ScrollControls pages={1} damping={0.25}>
-              <ScrollOffsetUpdater setScrollOffset={setScrollOffset} />
+            <OrbitControls 
+              enableZoom={false}
+              enablePan={false}
+              // minPolarAngle={Math.PI / 4}
+              minPolarAngle={Math.PI / 2 - Math.PI / 5 }
+              maxPolarAngle={Math.PI / 2 - Math.PI / 12 }
+              // minAzimuthAngle={-Math.PI / 2}
+              // maxAzimuthAngle={Math.PI / 2}
+              minDistance={3}
+              maxDistance={10}
+              target={[0, 0.5+positionY-0.3, 1]} //adjust by GSAP movement
+              />    
+            {/* <ScrollControls pages={1} damping={0.25}> */}
+              {/* <ScrollOffsetUpdater setScrollOffset={setScrollOffset} /> */}
               <Suspense fallback={<Loader />}>
                   <Float
                   speed={1} // Animation speed, defaults to 1
                   rotationIntensity={1} // XYZ rotation intensity, defaults to 1
                   floatIntensity={1} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
-                  floatingRange={[0,0]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
+                  floatingRange={[-0.01,0.01]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
                   >
-                    <Coral position={[0,positionY,1]} scale={scale} rotation={[0,Math.PI,0]} />
+                    <Coral position={[0,positionY-0.3,0]} scale={scale} rotation={[0,Math.PI,0]} />
                   </Float> 
               </Suspense>
-            </ScrollControls>
+            {/* </ScrollControls> */}
           {/* </Stage> */}
-        </PresentationControls>
+        {/* </PresentationControls> */}
         
         </Canvas>
-      {/* <div className="coral-page" >Hello</div> */}
-
-
+            
         <div className="video-container">
             <NavLink to={`/work#${categories[0].replace(/\s+/g, '-')}`}>
               <AnimateText text={`Physics and Space Simulation`} textcolor={'var(--bg-color)'} />
@@ -225,9 +239,10 @@ const Home = () => {
             onTouchStart={() => handleTouchStart(videoRef3)} > */}
             <source src="/media/HappyDumplingIcon.mp4" type="video/mp4" />
           </video>
-        </div>
-        <Footer />  
+        </div> 
+        <Footer/>
     </section>
+    
   );
 }
 
