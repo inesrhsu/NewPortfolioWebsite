@@ -126,23 +126,26 @@ const Home = () => {
       setWindowWidth(newWidth);
 
       if (window.innerWidth < 400){
-        setScale(0.002*window.innerWidth);
-        setPositionY(-0.5);
+        setScale(0.0020*window.innerWidth);
+        setPositionY(-1.5);
       }
       else if (window.innerWidth < 600){
-        setScale(0.0016*window.innerWidth);
-        setPositionY(-0.5);
+        setScale(0.0019*window.innerWidth);
+        setPositionY(-1.0);
       }
       else if(window.innerWidth < 1000){
-        setScale(0.0013*window.innerWidth);
+        setScale(0.0016*window.innerWidth);
+        setPositionY(-0.75);
       } 
       else if(window.innerWidth < 1400){
-        setScale(0.001*window.innerWidth);
+        setScale(0.0013*window.innerWidth);
+        setPositionY(-0.5);
       }
       else {
-        setScale(0.0008 * window.innerWidth);
+        setScale(0.0012 * window.innerWidth);
+        setPositionY(-0.5);
       }
-      setPositionY(-0.001*window.innerHeight);
+     
       
     };
 
@@ -162,8 +165,8 @@ const Home = () => {
             <p>INÉS RODRÍGUEZ HSU</p>
             {/* <p>Inés Rodríguez Hsu</p> */}
           </div>
-      <Canvas className="coralModel" dpr={[1, 2]}  camera={{fov:45, position:[0,0,5]}} >  {/*style={{"position":"absolute"}} */} 
-        <color attach="background" args={["#FFC0CB"]} />
+      <Canvas className="coral-model" dpr={[1, 2]}  camera={{fov:45, position:[0,0,5]}} >  {/*style={{"position":"absolute"}} */} 
+        {/* <color attach="background" args={["#FFC0CB"]} /> */}
         {/* <Html fullscreen >
           <div className="maintitle">
             <p>INÉS RODRÍGUEZ HSU</p>
