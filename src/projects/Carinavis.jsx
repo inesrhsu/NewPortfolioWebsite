@@ -2,9 +2,27 @@ import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import Footer from '../components/Footer';
+import ImageGallery from '../components/ImageGallery';
 
 
 const Carinavis = () => {
+  const projectPhotos = [
+    {id:1, src:'/media/carinavisTemple1.png',  alt:"Image of Carinavis Carina Temple Ruins"},
+    {id:2, src:'/media/carinavisTemple2.png',  alt:"Image of Carinavis Cassiopeia Temple Ruins"},
+    {id:3, src:'/media/carinavisTemple3.png',  alt:"Image of Carinavis Canis Major Temple Ruins"},
+    {id:4, src:'/media/carinavisTemple4.png',  alt:"Image of Carinavis Cygnus Temple Ruins"},
+    {id:5, src:'/media/carinavisTemple5.png',  alt:"Image of Carinavis Aquila Temple Ruins"},
+    {id:6, src:'/media/carinavisTemple6.png',  alt:"Image of Carinavis Lyra Temple Ruins"},
+    {id:7, src:'/media/carinavisTemple7.png',  alt:"Image of Carinavis Taurus Temple Ruins"},
+    {id:8, src:'/media/carinavisClothing.png', alt:"Image of Carinavis Clothing"},
+    {id:9, src:'/media/carinavisEvidence.png', alt:"Image of Carinavis Found Evidence"},
+  ];
+
+  const projectText = [
+    {id:10, src:'/media/carinavisText1.png', alt:"Carinavis Text 1"},
+    {id:11, src:'/media/carinavisText2.png', alt:"Carinavis Text 2"},
+  ];
+
   return (
     
     <section className="projectpage">
@@ -30,24 +48,11 @@ const Carinavis = () => {
         image of a reconstruction of their clothing and evidence of their existence.
         <br /><br />  
       </div>
-      <div className="project-photogrid">
-        <img className="project-allphotos" src='/media/carinavisTemple1.png' alt="Image of Carinavis Carina Temple Ruins"></img>
-        <img className="project-allphotos" src='/media/carinavisTemple2.png' alt="Image of Carinavis Cassiopeia Temple Ruins"></img>
-        <img className="project-allphotos" src='/media/carinavisTemple3.png' alt="Image of Carinavis Canis Major Temple Ruins"></img>
-        <img className="project-allphotos" src='/media/carinavisTemple4.png' alt="Image of Carinavis Cygnus Temple Ruins"></img>
-        <img className="project-allphotos" src='/media/carinavisTemple5.png' alt="Image of Carinavis Aquila Temple Ruins"></img>
-        <img className="project-allphotos" src='/media/carinavisTemple6.png' alt="Image of Carinavis Lyra Temple Ruins"></img>
-        <img className="project-allphotos" src='/media/carinavisTemple7.png' alt="Image of Carinavis Taurus Temple Ruins"></img>
-        <img className="project-allphotos" src='/media/carinavisClothing.png' alt="Image of Carinavis Clothing"></img>
-        <img className="project-allphotos" src='/media/carinavisEvidence.png' alt="Image of Carinavis Found Evidence"></img>
-      </div>
+      <ImageGallery images={projectPhotos}/>
       <div>
       <br /> 
       </div>
-      <div className="project-photogrid">
-        <img className="project-allphotos" src='/media/carinavisText1.png' alt="Carinavis Text 1"></img>
-        <img className="project-allphotos" src='/media/carinavisText2.png' alt="Carinavis Text 2"></img>
-      </div>
+      <ImageGallery images={projectText}/>
       <div className="footer"/>
       <Footer/>
     </section>

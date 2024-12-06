@@ -197,9 +197,6 @@ const StellarDrawingToolSketch = (p5) =>{
         }
     }
 
-
-
-
     // Resize the canvas when the browser's size changes.
     p5.windowResized = () => {
         sideLength = p5.min(p5.min(0.8*p5.windowWidth,700), p5.min(0.8*p5.windowHeight,700))

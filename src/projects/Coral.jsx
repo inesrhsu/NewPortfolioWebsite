@@ -2,8 +2,15 @@ import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import Footer from '../components/Footer';
+import ImageGallery from '../components/ImageGallery';
 
 const Coral = () => {
+
+  const projectPhotos = [
+    {id:1, src:'/media/coralphoto2.png', alt:"Photograph of my Coral installation"},
+    {id:2, src:'/media/meInCoral2.png', alt:"Photograph of me with my Coral installation"},
+  ];
+
   return (
     
     <section className="projectpage">
@@ -29,10 +36,7 @@ const Coral = () => {
         at the Miller Institute for Contemporary Art.  
         <br /><br />
       </div>
-      <div className="project-photogrid">
-        <img className="project-allphotos" src='/media/coralphoto2.png' alt="Photograph of my Coral installation"></img>
-        <img className="project-allphotos" src='/media/meInCoral2.png' alt="Photograph of me with my Coral installation"></img>
-      </div>
+      <ImageGallery images={projectPhotos}/>
 
       <div className="projectsubtitle">
         Coral Inflatables:

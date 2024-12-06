@@ -55,7 +55,7 @@ const ImageGallery = ({images})=>{
   }, [photoIndex]); 
 
   return (
-    <div className="image-gallery">
+    // <div className="image-gallery">
       <div className="photo-grid">
         {images.map((photo, index)=>(
             <div className="grid-item" key={photo.id}>
@@ -65,7 +65,7 @@ const ImageGallery = ({images})=>{
             </div>
           </div>
         ))}
-      </div>
+      {/* </div> */}
       {photoIndex !== null && (
         <div className="modal">
           <button className="close" onClick={closeModal}>
@@ -101,7 +101,7 @@ const Photography = () => {
     const [calella, setCalella] = useState(false);
     const [menorca, setMenorca] = useState(false);
     const [taipei, setTaipei] = useState(false);
-    const [peru, setPeru] = useState(true);
+    const [peru, setPeru] = useState(false);
     const [tainan, setTainan] = useState(false);
     const [nyc, setNYC] = useState(false);
     // const [miami, setMiami] = useState(false);

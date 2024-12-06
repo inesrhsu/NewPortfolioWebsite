@@ -2,9 +2,24 @@ import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import Footer from '../components/Footer';
+import ImageGallery from '../components/ImageGallery';
 
 
 const PhotographsForTheFuture = () => {
+
+  const projectPhotos = [
+    {id:1, src:'/media/photographsForTheFuturePhoto2.png', alt:"Photographs for the Future Photo 2"},
+    {id:2, src:'/media/photographsForTheFuturePhoto3.png', alt:"Photographs for the Future Photo 3"},
+    {id:3, src:'/media/photographsForTheFutureText1.png',  alt:"Photographs for the Future Instruction Text 1"},
+    {id:4, src:'/media/photographsForTheFutureText2.png',  alt:"Photographs for the Future Instruction Text 2"},
+    {id:5, src:'/media/photographsForTheFutureText3.png',  alt:"Photographs for the Future Instruction Text 3"},
+    {id:6, src:'/media/photographsForTheFutureText4.png',  alt:"Photographs for the Future Instruction Text 4"},
+    {id:7, src:'/media/photographsForTheFutureText5.png',  alt:"Photographs for the Future Instruction Text 5"},
+    {id:8, src:'/media/photographsForTheFutureText6.png',  alt:"Photographs for the Future Instruction Text 6"},
+    {id:9, src:'/media/photographsForTheFutureText7.png',  alt:"Photographs for the Future Instruction Text 7"},
+    {id:10, src:'/media/photographsForTheFutureText8.png',  alt:"Photographs for the Future Instruction Text 8"},
+  ];
+
   return (
     
     <section className="projectpage">
@@ -38,18 +53,7 @@ const PhotographsForTheFuture = () => {
         the pass of time.
         <br /><br />  
       </div>
-      <div className="project-photogrid">
-        <img className="project-allphotos" src='/media/photographsForTheFuturePhoto2.png' alt="Photographs for the Future Photo 2"></img>
-        <img className="project-allphotos" src='/media/photographsForTheFuturePhoto3.png' alt="Photographs for the Future Photo 3"></img>
-        <img className="project-allphotos" src='/media/photographsForTheFutureText1.png' alt="Photographs for the Future Instruction Text 1"></img>
-        <img className="project-allphotos" src='/media/photographsForTheFutureText2.png' alt="Photographs for the Future Instruction Text 2"></img>
-        <img className="project-allphotos" src='/media/photographsForTheFutureText3.png' alt="Photographs for the Future Instruction Text 3"></img>
-        <img className="project-allphotos" src='/media/photographsForTheFutureText4.png' alt="Photographs for the Future Instruction Text 4"></img>
-        <img className="project-allphotos" src='/media/photographsForTheFutureText5.png' alt="Photographs for the Future Instruction Text 5"></img>
-        <img className="project-allphotos" src='/media/photographsForTheFutureText6.png' alt="Photographs for the Future Instruction Text 6"></img>
-        <img className="project-allphotos" src='/media/photographsForTheFutureText7.png' alt="Photographs for the Future Instruction Text 7"></img>
-        <img className="project-allphotos" src='/media/photographsForTheFutureText8.png' alt="Photographs for the Future Instruction Text 8"></img>
-      </div>
+      <ImageGallery images={projectPhotos}/>
       <div className="footer"/>
       <Footer/>
     </section>

@@ -2,8 +2,15 @@ import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import Footer from '../components/Footer';
+import ImageGallery from '../components/ImageGallery';
 
 const StarCluster = () => {
+
+  const projectPhotos=[
+    {id:1, src:'/media/StarClusterPhoto1.png', alt:"Star Cluster Evolution Snapshot"},
+    {id:2, src:'/media/StarClusterPhoto2.png', alt:"Star Cluster Evolution Snapshot"},
+  ];
+
   return (
     
     <section className="projectpage">
@@ -45,10 +52,7 @@ const StarCluster = () => {
       <div className="projectsubtitle" style={{fontSize:23, paddingBottom:10}}>
       View more:
       </div>
-      <div className="project-photogrid">
-        <img className="project-allphotos" src='/media/StarClusterPhoto1.png' alt="Star Cluster Evolution Snapshot"></img>
-        <img className="project-allphotos" src='/media/StarClusterPhoto2.png' alt="Star Cluster Evolution Snapshot"></img>
-      </div>
+      <ImageGallery images={projectPhotos}/>
       <div className="projectsubtitle" style={{fontSize:23, paddingBottom:10}}>
       View research poster:
       </div>

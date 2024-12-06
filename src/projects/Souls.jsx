@@ -2,8 +2,18 @@ import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import Footer from '../components/Footer';
+import ImageGallery from '../components/ImageGallery';
+
 
 const Souls = () => {
+
+  const snapshots = [
+    {id:1, src:'/media/SoulsPhoto5.png', alt:"Screenshot from Souls animation"},
+    {id:2, src:'/media/SoulsPhoto2.png', alt:"Screenshot from Souls animation"},
+    {id:3, src:'/media/SoulsPhoto3.png', alt:"Screenshot from Souls animation"},
+    {id:4, src:'/media/SoulsPhoto4.png', alt:"Screenshot from Souls animation"},
+  ];
+
   return (
     
     <section className="projectpage">
@@ -27,12 +37,8 @@ const Souls = () => {
       <div className="projectsubtitle" style={{fontSize:23, paddingBottom:10}}>
       View snapshots:
       </div>
-      <div className="project-photogrid">
-        <img className="project-allphotos" src='/media/SoulsPhoto5.png' alt="Screenshot from Souls animation"></img>
-        <img className="project-allphotos" src='/media/SoulsPhoto2.png' alt="Screenshot from Souls animation"></img>
-        <img className="project-allphotos" src='/media/SoulsPhoto3.png' alt="Screenshot from Souls animation"></img>
-        <img className="project-allphotos" src='/media/SoulsPhoto4.png' alt="Screenshot from Souls animation"></img>
-      </div>
+      
+      <ImageGallery images={snapshots}/>
       <div className="footer"/>   
       <Footer/>
     </section>

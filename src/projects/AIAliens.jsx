@@ -65,15 +65,9 @@ const AIAliens = () => {
         This video shows an animation of a purple AIAlien.
       </video>
 
-        
-      
-        <video className="project-allphotos" src='/media/greenAlienVid.mp4' alt="Animation of a gree AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='/media/redAlienVid.mp4' alt="Animation of a red AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='/media/colorfulAlienVid.mp4' alt="Animation of a colorful AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='/media/purpleAlienVid.mp4' alt="Animation of a purple AI Alien" autoPlay loop></video>
-        <video className="project-allphotos" src='/media/purpleAlienVid2.mp4' alt="Animation of a purple AI Alien" autoPlay loop></video>
       </div>
       <div className="projectdescription">
+      <br /><br />
       I use an artificial intelligence bot ('Midjourney') to obtain 
         images of what an AI thinks life forms would look like and in what type 
         of world they would live in with prompt words like “life form” and color 

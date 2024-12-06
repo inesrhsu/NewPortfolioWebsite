@@ -740,7 +740,7 @@ a{
     
 
     background: var(--bg-color);
-    background: #ffffff80;
+    /* background: #ffffff80; */
     display: flex;
     justify-content: center;
     align-items: center;

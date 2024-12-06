@@ -2,8 +2,15 @@ import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import Footer from '../components/Footer';
+import ImageGallery from '../components/ImageGallery';
 
 const FountainOfLife = () => {
+
+  const projectPhotos = [
+    {id:1, src:'/media/FountainOfLifePhoto1.png', alt:"Screenshot from Fountain of Life 3D Animation"},
+    {id:2, src:'/media/FountainOfLifePhoto2.png', alt:"Screenshot from Fountain of Life 3D Animation"},
+  ];
+
   return (
     
     <section className="projectpage">
@@ -30,10 +37,7 @@ const FountainOfLife = () => {
       <div className="projectsubtitle" style={{fontSize:23, paddingBottom:10}}>
       View images:
       </div>
-      <div className="project-photogrid">
-        <img className="project-allphotos" src='/media/FountainOfLifePhoto1.png' alt="Screenshot from Fountain of Life 3D Animation"></img>
-        <img className="project-allphotos" src='/media/FountainOfLifePhoto2.png' alt="Screenshot from Fountain of Life 3D Animation"></img>
-      </div>
+      <ImageGallery images={projectPhotos}/>
       <div className="footer"/>   
       <Footer/>
     </section>

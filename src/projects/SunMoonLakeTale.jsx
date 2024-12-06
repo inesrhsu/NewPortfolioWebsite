@@ -2,8 +2,17 @@ import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import Footer from '../components/Footer';
+import ImageGallery from '../components/ImageGallery';
 
 const SunMoonLakeTale = () => {
+
+  const projectPhotos = [
+    {id:1, src:"/media/SunMoonLakePhoto2.png", alt:"Photograph of the Sun Moon Lake Tale project"},
+    {id:2, src:'/media/SunMoonLakePhoto3.png', alt:"Photograph of the Sun Moon Lake Tale project"},
+    {id:3, src:'/media/SunMoonLakePhoto4.png', alt:"Photograph of the Sun Moon Lake Tale project"},
+    {id:4, src:'/media/SunMoonLakePhoto5.png', alt:"Photograph of the Sun Moon Lake Tale project"},
+  ];
+
   return (
     
     <section className="projectpage">
@@ -25,12 +34,7 @@ const SunMoonLakeTale = () => {
       <div className="projectsubtitle" style={{fontSize:23, paddingBottom:10}}>
       View more images:
       </div>
-      <img className="project-photo1" src="/media/SunMoonLakePhoto2.png" alt="Photograph of the Sun Moon Lake Tale project"></img>
-      <div><br /></div>
-      <div className="project-photogrid">
-        <img className="project-allphotos" src='/media/SunMoonLakePhoto3.png' alt="Photograph of my Coral installation"></img>
-        <img className="project-allphotos" src='/media/SunMoonLakePhoto4.png' alt="Photograph of my Coral installation"></img>
-      </div>
+      <ImageGallery images={projectPhotos}/>
       <div className="footer"/> 
       <Footer/>  
     </section>

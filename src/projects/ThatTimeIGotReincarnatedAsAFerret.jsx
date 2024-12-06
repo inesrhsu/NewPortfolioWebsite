@@ -2,8 +2,23 @@ import React from 'react';
 import './../pages/Pages.css';
 import { NavLink } from "react-router-dom";
 import Footer from '../components/Footer';
+import ImageGallery from '../components/ImageGallery';
 
 const ThatTimeIGotReincarnatedAsAFerret = () => {
+
+  const projectPhotos=[
+    {id:1, src:'/media/thatTimeIGotReincarnatedAsAFerret.png',        alt:"Home page of 'That Time I Got Reincarnated as a Ferret'"},
+    {id:2, src:'/media/thatTimeIGotReincarnatedAsAFerretPhoto2.png',  alt:"Game start of 'That Time I Got Reincarnated as a Ferret'"},
+    {id:3, src:'/media/thatTimeIGotReincarnatedAsAFerretPhoto3.png',  alt:"Ferret climbing in 'That Time I Got Reincarnated as a Ferret'"},
+    {id:4, src:'/media/thatTimeIGotReincarnatedAsAFerretPhoto4.png',  alt:"Ferret climbing in 'That Time I Got Reincarnated as a Ferret'"},
+    {id:5, src:'/media/thatTimeIGotReincarnatedAsAFerretPhoto5.png',  alt:"Obstacle drop in 'That Time I Got Reincarnated as a Ferret'"},
+    {id:6, src:'/media/thatTimeIGotReincarnatedAsAFerretPhoto6.png',  alt:"Obstacle drop in 'That Time I Got Reincarnated as a Ferret'"},
+    {id:7, src:'/media/thatTimeIGotReincarnatedAsAFerretPhoto7.png',  alt:"Winning animation in 'That Time I Got Reincarnated as a Ferret'"},
+    {id:8, src:'/media/thatTimeIGotReincarnatedAsAFerretPhoto8.png',  alt:"Winning animation in 'That Time I Got Reincarnated as a Ferret'"},
+    {id:9, src:'/media/thatTimeIGotReincarnatedAsAFerretPhoto9.png',  alt:"Winning screen in 'That Time I Got Reincarnated as a Ferret'"},
+    {id:10, src:'/media/thatTimeIGotReincarnatedAsAFerretPhoto10.png', alt:"Losing screen in 'That Time I Got Reincarnated as a Ferret'"},
+  ];
+
   return (
     
     <section className="projectpage">
@@ -49,18 +64,7 @@ const ThatTimeIGotReincarnatedAsAFerret = () => {
       <div className="projectsubtitle" style={{fontSize:23, paddingBottom:10}}>
       View snapshots:
       </div>
-      <div className="project-photogrid">
-        <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerret.png' alt="Home page of 'That Time I Got Reincarnated as a Ferret'"></img>
-        <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerretPhoto2.png' alt="Game start of 'That Time I Got Reincarnated as a Ferret'"></img>
-        <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerretPhoto3.png' alt="Ferret climbing in 'That Time I Got Reincarnated as a Ferret'"></img>
-        <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerretPhoto4.png' alt="Ferret climbing in 'That Time I Got Reincarnated as a Ferret'"></img>
-        <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerretPhoto5.png' alt="Obstacle drop in 'That Time I Got Reincarnated as a Ferret'"></img>
-        <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerretPhoto6.png' alt="Obstacle drop in 'That Time I Got Reincarnated as a Ferret'"></img>
-        <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerretPhoto7.png' alt="Winning animation in 'That Time I Got Reincarnated as a Ferret'"></img>
-        <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerretPhoto8.png' alt="Winning animation in 'That Time I Got Reincarnated as a Ferret'"></img>
-        <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerretPhoto9.png' alt="Winning screen in 'That Time I Got Reincarnated as a Ferret'"></img>
-        <img className="project-allphotos" src='/media/thatTimeIGotReincarnatedAsAFerretPhoto10.png' alt="Losing screen in 'That Time I Got Reincarnated as a Ferret'"></img>
-      </div>
+      <ImageGallery images={projectPhotos}/>
       <div className="footer"/>   
       <Footer/>
     </section>
