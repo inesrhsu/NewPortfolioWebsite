@@ -126,7 +126,7 @@ const Home = () => {
       setWindowWidth(newWidth);
 
       if (window.innerWidth < 400){
-        setScale(0.0020*window.innerWidth);
+        setScale(0.002*window.innerWidth);
         setPositionY(-1.5);
       }
       else if (window.innerWidth < 600){
