@@ -799,12 +799,16 @@ a{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1000;
+    z-index: 1400;
+  }
+  button:hover {
+    opacity: 0.7;
+    color: var(--second-color);
   }
   
   .prev {
     left: 2rem;
-  }
+  } 
   
   .next {
     right: 2rem;
@@ -818,12 +822,20 @@ a{
     cursor: pointer;
     padding: 10px;
   }
-  
 
+  @media only screen and (max-width: 800px) {
+    .prev{
+        left: 1.5%;
+    }  
+    .next {
+        right:1.5%;
+    }
+    .close {
+        right:1.5%
+    }
+
+} 
   
-  button:hover {
-    opacity: 0.7;
-    color: var(--second-color);
-  }
+ 
   
 
