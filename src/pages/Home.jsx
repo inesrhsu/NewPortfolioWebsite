@@ -1,5 +1,5 @@
 import React, { Suspense, useLayoutEffect, useEffect, useRef, useState} from 'react'
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import './../index.css'
 import './Pages.css'
 import { categories } from './Projects';
@@ -158,6 +158,8 @@ const Home = () => {
     };
   },[]);
 
+  const navigate = useNavigate();
+
   return (
     <section className="home">
       <Navbar scrollOffset={scrollOffset} />
@@ -208,7 +210,7 @@ const Home = () => {
         </Canvas>
             
         <div className="video-container">
-            <NavLink to={`/work#${categories[0].replace(/\s+/g, '-')}`}>
+            <NavLink to={`/work#Physics-and-Space-Simulation`}>
               <AnimateText text={`Physics and Space Simulation`} textcolor={'var(--bg-color)'} />
             </NavLink>
           <video className="home-video" autoPlay={true} loop muted preload="auto" playsInline webkit-playsinline="true" poster="/media/VRBHPhoto.png">
@@ -220,7 +222,7 @@ const Home = () => {
           </video> 
         </div>
         <div className="video-container">
-              <NavLink to={`/work#${categories[1].replace(/\s+/g, '-')}`}>
+              <NavLink to={`/work#Animation`}>
                 <AnimateText text={`Animation`} textcolor={'var(--first-color)'}/>
               </NavLink> 
           <video className="home-video" autoPlay={true} loop muted preload="auto" playsInline webkit-playsinline="true" poster="/media/SoulsPhoto5.png">
@@ -232,7 +234,7 @@ const Home = () => {
           </video>
         </div>
         <div className="video-container">
-              <NavLink to={`/work#${categories[3].replace(/\s+/g, '-')}`}>
+              <NavLink to={`/work#Computer-Generated-Art`}>
                 <AnimateText text={`Computer Generated Art`} textcolor={'var(--first-color)'}/>
               </NavLink> 
           <video className="home-video" autoPlay={true} loop muted preload="auto" playsInline webkit-playsinline="true" poster="/media/HappyDumplingPhoto.png">
