@@ -216,7 +216,7 @@ const Home = () => {
             onMouseEnter={() => handleMouseEnter(videoRef1)} 
             onMouseLeave={() => handleMouseLeave(videoRef1)} 
             onTouchStart={() => handleTouchStart(videoRef1)} > */}
-            <source src="https://dy4k3ny7v09me.cloudfront.net/vrBlackHole.mp4" type="video/mp4" />
+            <source src="https://dy4k3ny7v09me.cloudfront.net/VRBHIcon.mp4" type="video/mp4" />
           </video> 
         </div>
         <div className="video-container">
@@ -228,7 +228,7 @@ const Home = () => {
             onMouseEnter={() => handleMouseEnter(videoRef2)} 
             onMouseLeave={() => handleMouseLeave(videoRef2)} 
             onTouchStart={() => handleTouchStart(videoRef2)} > */}
-            <source src="https://dy4k3ny7v09me.cloudfront.net/souls.mp4" type="video/mp4" />
+            <source src="/media/SoulsIcon.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="video-container">
