@@ -131,26 +131,49 @@
     z-index: 2;
 }
 .overlay-text1{
-    position: absolute;
-    top:15%;
-    left:21%;
-    font-family: var(--body-font);
-    transform: translate(-50%, -50%);
+    /* position: relative;
+    top:0%;
+    left:0%; */
+    /* width: 100%; */
+    /* transform: translate(-50%, -50%); */
+    font-family: var(--title-font);
+   
     color: var(--bg-color);
-    text-shadow: 0px 0px 1px rgba(255, 255, 255, 1);
-     /* background-color: rgba(0, 0, 0, 0.20); */
+    /* text-shadow: 0px 0px 1px rgba(255, 255, 255, 1); */
+     /* background-color: rgba(255, 255, 255, 0.3); */
+     border-radius: 10px;
+     padding-left:1%;
      /* border-bottom: 1px solid white; */
-    font-weight: 200;
+    font-weight: 600;
     /* font-style: italic; */
     font-size: 4.0vw;
     text-align:left;
     width: 35%;
+    /* pointer-events: auto; */
 }
 /* @media only screen and (max-width: 600px){
     .overlay-text1{
         font-weight: 400;
     }
 } */
+/* .animate-text{
+    pointer-events: auto; /* Ensure clicks are allowed */
+  /* } */
+ .navlink {
+    position: absolute;
+    /* margin-top:8%; */
+    /* margin-left:26%; */
+    top: 3%;
+    left: 2%;
+    /* top: 20%
+    left: 2% */
+    /* transform: translate(-50%, -50%); */
+    width: 98%;
+    height: 95%;
+    z-index: 10; /* Ensure the link is above other elements */
+    pointer-events: auto;
+    /* border: 1px blue solid; */
+ }  
 
  .page{
     display:flex;

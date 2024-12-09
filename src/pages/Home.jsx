@@ -159,6 +159,18 @@ const Home = () => {
   },[]);
 
   const navigate = useNavigate();
+  const physicsAndSpaceSimulationClick = () => {
+    // Navigate with hash change
+    navigate(`/work#Physics-and-Space-Simulation`);
+  };
+  const animationClick = () => {
+    // Navigate with hash change
+    navigate(`/work#Animation`);
+  };
+  const computerGeneratedArtClick = () => {
+    // Navigate with hash change
+    navigate(`/work#Computer-Generated-Art`);
+  };
 
   return (
     <section className="home">
@@ -210,7 +222,7 @@ const Home = () => {
         </Canvas>
             
         <div className="video-container">
-            <NavLink to={`/work#Physics-and-Space-Simulation`}>
+            <NavLink className="navlink" to={`/work#Physics-and-Space-Simulation`}>
               <AnimateText text={`Physics and Space Simulation`} textcolor={'var(--bg-color)'} />
             </NavLink>
           <video className="home-video" autoPlay={true} loop muted preload="auto" playsInline webkit-playsinline="true" poster="/media/VRBHPhoto.png">
@@ -222,8 +234,8 @@ const Home = () => {
           </video> 
         </div>
         <div className="video-container">
-              <NavLink to={`/work#Animation`}>
-                <AnimateText text={`Animation`} textcolor={'var(--first-color)'}/>
+              <NavLink className="navlink" to={`/work#Animation`}>
+                <AnimateText className="animate-text" text={`Animation`} textcolor={'var(--first-color)'} />
               </NavLink> 
           <video className="home-video" autoPlay={true} loop muted preload="auto" playsInline webkit-playsinline="true" poster="/media/SoulsPhoto5.png">
             {/* ref={videoRef2} 
@@ -234,8 +246,8 @@ const Home = () => {
           </video>
         </div>
         <div className="video-container">
-              <NavLink to={`/work#Computer-Generated-Art`}>
-                <AnimateText text={`Computer Generated Art`} textcolor={'var(--first-color)'}/>
+              <NavLink className="navlink" to={`/work#Computer-Generated-Art`}>
+                <AnimateText className="animate-text" text={`Computer Generated Art`} textcolor={'var(--first-color)'} />
               </NavLink> 
           <video className="home-video" autoPlay={true} loop muted preload="auto" playsInline webkit-playsinline="true" poster="/media/HappyDumplingPhoto.png">
             {/* ref={videoRef3} 

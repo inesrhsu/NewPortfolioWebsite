@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import {Home, About, Work, Contact, Photography} from './pages';
 import {Coral, VRBlackHole, StarCluster, IrisSim,Souls,Spring,Year2235,
   AIAliens,HappyDumplings,StellarDrawingTool,ButterflyDandelions,
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <main>
         <Router>
+            <ScrollToTop />
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home/>} />

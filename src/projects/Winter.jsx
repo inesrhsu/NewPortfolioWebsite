@@ -31,7 +31,7 @@ const Winter = () => {
         <img className="project-allphotos" src='/media/WinterPhoto7.png' alt="Winter Color Woodblock Print 7"></img>
         <img className="project-allphotos" src='/media/WinterPhoto8.png' alt="Winter Color Woodblock Print 8"></img>
       </div>
-      <img className="project-photo1" src="/media/winterPhotoBW.png" alt="Winter B&W Woodblock Print" style={{paddingTop:25}}></img>
+      <img className="project-photo1" src="/media/WinterPhotoBW.png" alt="Winter B&W Woodblock Print" style={{paddingTop:25}}></img>
       <div className="footer"/> 
       <Footer/>
     </section>
